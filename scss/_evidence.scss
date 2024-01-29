@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.evidence{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #FFF6F6;
+    .left{
+        display: flex;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        background-image: url('../images/pexels-andrea-piacquadio-3756345.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .right{
+        display: flex;
+        padding: 150px 90px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        flex: 1 0 0;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            align-self: stretch;
+            .contentt{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+                align-self: stretch;
+                .top-contents{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 25px;
+                    align-self: stretch;
+                    .frame{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+                        align-self: stretch;
+                        .text1{
+                            color: #9F9F9F;
+                            font-family: "Space Grotesk";
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            margin: 0;
+                        }
+                        .text2{
+                            color: #343F52;
+                            font-family: "Space Grotesk";
+                            font-size: 44px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 130%; 
+                            margin: 0;
+                        }
+                    }
+                    .text{
+                        color: #60697B;
+                        font-family: Inter;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .scores-and-stars{
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+            align-self: stretch;
+            .score-and-star{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                .score{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    align-self: stretch;
+                    .txt1{
+                        color: #343F52;
+                        font-family: "Space Grotesk";
+                        font-size: 44px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                    .txt2{
+                        color: #343F52;
+                        font-family: "Space Grotesk";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                }
+                .star{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 4px;
+                    align-self: stretch;
+                }
+            }
+        }
+    }
+}
