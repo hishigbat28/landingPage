@@ -9,6 +9,8 @@
     gap: 64px;
     align-self: stretch;
     background: #10003E;
+    width: 100%;
+    overflow: hidden;
     .topanddot{
         display: flex;
         flex-direction: column;
@@ -110,8 +112,8 @@
                     // width: 100%;
                     height: 100%;
                     padding-left: 16px;
-                    border-top-left-radius: 12px;
-                    border-bottom-left-radius: 12px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
                     border: none;   
                     outline: none;
                 }
@@ -129,7 +131,7 @@
                         font-size: 17px;
                         font-style: normal;
                         font-weight: 600;
-                        // line-height: normal;
+                        line-height: normal;
                         // margin: 0;
                     }
                 }

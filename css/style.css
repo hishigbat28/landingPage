@@ -26,6 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  overflow: hidden;
 }
 header .logo {
   width: 63px;
@@ -83,6 +84,7 @@ header .button i {
   height: fit-content;
   display: flex;
   background-color: #FFF6F6;
+  overflow: hidden;
 }
 .home .left {
   width: 50%;
@@ -145,6 +147,7 @@ header .button i {
 }
 
 .choicee {
+  width: 100%;
   display: flex;
   padding: 120px 100px;
   flex-direction: column;
@@ -152,6 +155,7 @@ header .button i {
   align-items: center;
   gap: 50px;
   align-self: stretch;
+  overflow: hidden;
 }
 .choicee .topContent {
   display: flex;
@@ -239,6 +243,7 @@ header .button i {
 }
 
 .guarantee {
+  width: 100%;
   display: flex;
   padding: 120px 100px;
   flex-direction: column;
@@ -247,6 +252,7 @@ header .button i {
   gap: 50px;
   align-self: stretch;
   background: #FFF6F6;
+  overflow: hidden;
 }
 .guarantee .top-content {
   display: flex;
@@ -368,11 +374,13 @@ header .button i {
 }
 
 .plans {
+  width: 100%;
   display: flex;
   padding: 120px 100px;
   align-items: center;
   gap: 100px;
   align-self: stretch;
+  overflow: hidden;
 }
 .plans .topContent {
   display: flex;
@@ -491,6 +499,8 @@ header .button i {
   align-items: flex-start;
   align-self: stretch;
   background: #FFF6F6;
+  width: 100%;
+  overflow: hidden;
 }
 .evidence .left {
   display: flex;
@@ -609,11 +619,13 @@ header .button i {
 }
 
 .about {
+  width: 100%;
   display: flex;
   padding: 120px 100px;
   align-items: center;
   gap: 66px;
   align-self: stretch;
+  overflow: hidden;
 }
 .about .images {
   display: flex;
@@ -742,6 +754,7 @@ header .button i {
 }
 
 .price {
+  width: 100%;
   display: flex;
   padding: 120px 100px;
   flex-direction: column;
@@ -749,6 +762,7 @@ header .button i {
   gap: 50px;
   align-self: stretch;
   background: #FFF6F6;
+  overflow: hidden;
 }
 .price .topContent {
   display: flex;
@@ -885,6 +899,8 @@ header .button i {
   gap: 64px;
   align-self: stretch;
   background: #10003E;
+  width: 100%;
+  overflow: hidden;
 }
 .footer .topanddot {
   display: flex;
@@ -988,8 +1004,8 @@ header .button i {
 .footer .cards .cardd .inputt input {
   height: 100%;
   padding-left: 16px;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   border: none;
   outline: none;
 }
@@ -1006,6 +1022,7 @@ header .button i {
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

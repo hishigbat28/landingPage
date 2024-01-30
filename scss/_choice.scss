@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 .choicee{
+    width: 100%;
     display: flex;
     padding: 120px 100px;
     flex-direction: column;
@@ -8,6 +9,7 @@
     align-items: center;
     gap: 50px;
     align-self: stretch;
+    overflow: hidden;
     .topContent{
         display: flex;
         width: 993px;

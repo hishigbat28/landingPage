@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 .plans{
+    width: 100%;
     display: flex;
     padding: 120px 100px;
     align-items: center;
     gap: 100px;
     align-self: stretch;
+    overflow: hidden;
     .topContent{
         display: flex;
         flex-direction: column;
