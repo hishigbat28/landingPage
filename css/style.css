@@ -26,7 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  overflow: hidden;
 }
 header .logo {
   width: 63px;
@@ -59,7 +58,7 @@ header .menu .item {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
-  transition: 300ms;
+  transition: 200ms;
 }
 header .menu .item:hover {
   color: #df0000;
@@ -78,7 +77,7 @@ header .button {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
-  transition: 300ms;
+  transition: 200ms;
 }
 header .button i {
   width: 12.3px;
@@ -87,12 +86,52 @@ header .button i {
 header .button:hover {
   transform: translateY(-4px);
 }
+header .smallmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: 200ms;
+  cursor: pointer;
+  position: relative;
+}
+header .smallmenu:active {
+  color: #df0000;
+}
+header .smallmenu #check:checked ~ .dropdown {
+  display: block;
+}
+header .smallmenu #check {
+  display: none;
+}
+header .smallmenu .dropdown {
+  position: absolute;
+  width: 800px;
+  height: fit-content;
+  padding: 20px 0;
+  background-color: #FFF6F6;
+  top: 60px;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  border-radius: 8px;
+  color: #343F52;
+  font-family: "Inter", sans-serif;
+  font-size: medium;
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+  display: none;
+}
 
 @media (max-width: 1060px) {
   header .menu {
     display: none;
   }
   header .button {
+    display: none;
+  }
+}
+@media (min-width: 1060px) {
+  header .smallmenu {
     display: none;
   }
 }
