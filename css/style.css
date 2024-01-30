@@ -58,6 +58,11 @@ header .menu .item {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+  transition: 300ms;
+}
+header .menu .item:hover {
+  color: #df0000;
 }
 header .button {
   display: flex;
@@ -73,12 +78,24 @@ header .button {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
+  transition: 300ms;
 }
 header .button i {
   width: 12.3px;
   height: 15px;
 }
+header .button:hover {
+  transform: translateY(-4px);
+}
 
+@media (max-width: 1060px) {
+  header .menu {
+    display: none;
+  }
+  header .button {
+    display: none;
+  }
+}
 .home {
   width: 100%;
   height: fit-content;
