@@ -12,7 +12,7 @@
     overflow: hidden;
     .topContent{
         display: flex;
-        width: 993px;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -90,6 +90,37 @@
                         line-height: 160%; 
                         margin: 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:535px){
+    .choicee{
+        .topContent{
+            .bottomText{
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width:995px){
+    .choicee{
+        .allChoices{
+            .choices{
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width:535px){
+    .choicee{
+        padding: 100px 50px;
+        .allChoices{
+            .choices{
+                .choice{
+                    flex-direction: column;
                 }
             }
         }

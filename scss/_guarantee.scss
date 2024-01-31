@@ -13,7 +13,7 @@
     overflow: hidden;
     .top-content{
         display: flex;
-        width: 973px;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -49,7 +49,8 @@
             justify-content: center;
             align-items: center;
             gap: 40px;
-            align-self: stretch;
+            // align-self: stretch;
+            flex-wrap: wrap;
             .card{
                 display: flex;
                 min-height: 400px;
@@ -106,6 +107,7 @@
                         justify-content: center;
                         align-items: flex-start;
                         margin-top: 25px;
+                        flex-wrap: wrap;
                         .peoplename{
                             color: #343F52;
                             text-align: center;
@@ -123,6 +125,54 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:535px){
+    .guarantee{
+        padding: 70px 50px;
+        .top-content{
+            .toptext{
+                font-size: 17px;
+            }
+            .bottomtext{
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width:1343px){
+    .guarantee{
+        .allCards{
+            .cards{
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width:430px){
+    .guarantee{
+        .allCards{
+            .cards{
+                .card{
+                    .star-and-comment{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    .image-and-name{
+                        .name{
+                            .peoplename{
+                                font-size: 14px;
+                            }
+                            .professional{
+                                font-size: 10px;
+                            }
                         }
                     }
                 }

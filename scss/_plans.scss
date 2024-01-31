@@ -121,3 +121,34 @@
         }
     }
 }
+
+@media (max-width:535px){
+    .plans{
+        padding: 70px 50px;
+        .topContent{
+            .first2line{
+                .topText{
+                    font-size: 17px;
+                }
+                .bottomText{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1090px){
+    .plans{
+        flex-direction: column;
+    }
+}
+@media (max-width:700px){
+    .plans{
+        .cards{
+            .card{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

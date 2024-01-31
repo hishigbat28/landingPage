@@ -66,3 +66,50 @@
         }
     }
 }
+@media (max-width:1460px){
+    .home{
+        .right{
+            height: 820px;
+        }
+    }
+}
+@media (max-width:1308px){
+    .home{
+        .right{
+            height: 920px;
+        }
+    }
+} 
+@media (max-width:1294px){
+    .home{
+        flex-direction: column-reverse;
+        .left{
+            width: 100%;
+            padding: 100px 100px;
+        }
+        .right{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+@media (max-width:700px){
+    .home{
+        .left{
+            padding: 60px 100px;
+        }
+    }
+}
+@media (max-width:535px){
+    .home{
+        .left{
+            padding: 100px 50px;
+            .title{
+                font-size: 30px;
+            }
+            .text{
+                font-size: 30px;
+            }
+        }
+    }
+}

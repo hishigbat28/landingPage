@@ -123,3 +123,34 @@
         }
     }
 }
+
+@media (max-width:1374px){
+    .evidence{
+        flex-direction: column;
+    }
+}
+@media (max-width:535px){
+    .evidence{
+        .right{
+            width: 100%;
+            padding: 70px 50px;
+            .scores-and-stars{
+                flex-direction: column;
+            }
+            .content{
+                .contentt{
+                    .top-contents{
+                        .frame{
+                            .text1{
+                                font-size: 17px;
+                            }
+                            .text2{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
