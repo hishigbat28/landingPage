@@ -10,13 +10,19 @@
     align-self: stretch;
     background: #FFF6F6;
     overflow: hidden;
+    @include breakpoint-down(535px){
+        padding: 70px 50px;
+    }
     .topContent{
         display: flex;
-        width: 846px;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 16px;
+        @include breakpoint-down(1220px){
+            width: 100%;
+        }
         .topText{
             color: #9F9F9F;
             text-align: center;
@@ -36,6 +42,10 @@
             font-weight: 700;
             line-height: 130%;
             margin: 0;
+            @include breakpoint-down(535px){
+                font-size: 30px;
+                text-align: left;
+            }
         }
     }
     .cards{
