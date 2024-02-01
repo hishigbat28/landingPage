@@ -422,6 +422,11 @@ ol {
   align-items: center;
   align-self: stretch;
 }
+@media only screen and (max-width: 534px) {
+  .site-header {
+    padding: 32px 50px;
+  }
+}
 .site-header .logo {
   width: 63px;
   height: 80px;
@@ -1307,12 +1312,27 @@ ol {
   align-self: stretch;
   overflow: hidden;
 }
+@media only screen and (max-width: 534px) {
+  .about {
+    padding: 70px 50px;
+  }
+}
+@media only screen and (max-width: 1219px) {
+  .about {
+    flex-direction: column;
+  }
+}
 .about .images {
   display: flex;
   width: 671px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+}
+@media only screen and (max-width: 1345px) {
+  .about .images {
+    width: 500px;
+  }
 }
 .about .images .topImage {
   display: flex;
@@ -1325,6 +1345,11 @@ ol {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 1345px) {
+  .about .images .topImage {
+    padding: 110px 210px;
+  }
 }
 .about .images .bottomImages {
   display: flex;
@@ -1345,6 +1370,14 @@ ol {
   background-size: cover;
   background-position: center;
 }
+@media only screen and (max-width: 1345px) {
+  .about .images .bottomImages .leftImage {
+    width: 210px;
+    height: 177px;
+    padding: 100px;
+    background-position: right;
+  }
+}
 .about .images .bottomImages .rightImage {
   display: flex;
   width: 329px;
@@ -1357,6 +1390,13 @@ ol {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 1345px) {
+  .about .images .bottomImages .rightImage {
+    width: 210px;
+    height: 177px;
+    padding: 100px;
+  }
 }
 .about .content {
   display: flex;
