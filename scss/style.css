@@ -11,16 +11,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
@@ -412,6 +402,14 @@ ol {
   height: 15px;
 }
 
+.font-main {
+  font-family: Inter, sans-serif;
+}
+
+.font-secondary {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -652,7 +650,6 @@ ol {
   line-height: 120%;
   color: #343F52;
   font-style: normal;
-  font-family: "Space Grotesk", sans-serif;
 }
 .home .left .text {
   font-size: 25px;
@@ -660,7 +657,6 @@ ol {
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
-  font-family: "Inter", sans-serif;
 }
 .home .left .button {
   display: flex;
@@ -675,7 +671,6 @@ ol {
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Inter", sans-serif;
 }
 .home .left .button i {
   width: 12.3px;
@@ -762,7 +757,6 @@ ol {
 .choicee .topContent .topText {
   color: #9F9F9F;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -771,7 +765,6 @@ ol {
 .choicee .topContent .bottomText {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -803,7 +796,6 @@ ol {
 .choicee .allChoices .choices .choice .number {
   color: #DF0000;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 500;
@@ -819,7 +811,6 @@ ol {
 }
 .choicee .allChoices .choices .choice .content .topText {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -828,7 +819,6 @@ ol {
 }
 .choicee .allChoices .choices .choice .content .bottomText {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -880,7 +870,6 @@ ol {
 .guarantee .top-content .toptext {
   color: #9F9F9F;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -889,7 +878,6 @@ ol {
 .guarantee .top-content .bottomtext {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -936,7 +924,6 @@ ol {
 .guarantee .allCards .cards .card .star-and-comment p {
   align-self: stretch;
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -974,7 +961,6 @@ ol {
 .guarantee .allCards .cards .card .image-and-name .name .peoplename {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -983,7 +969,6 @@ ol {
 .guarantee .allCards .cards .card .image-and-name .name .professional {
   color: #9F9F9F;
   text-align: center;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -1046,7 +1031,6 @@ ol {
 }
 .plans .topContent .first2line .topText {
   color: #9F9F9F;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1056,7 +1040,6 @@ ol {
 }
 .plans .topContent .first2line .bottomText {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -1065,7 +1048,6 @@ ol {
 }
 .plans .topContent .middleText {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -1085,7 +1067,6 @@ ol {
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Inter", sans-serif;
 }
 .plans .topContent .button i {
   width: 12.3px;
@@ -1125,7 +1106,6 @@ ol {
 }
 .plans .cards .card .contentt .topTextt {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -1134,7 +1114,6 @@ ol {
 }
 .plans .cards .card .contentt .bottomText {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -1223,7 +1202,6 @@ ol {
 }
 .evidence .right .content .contentt .top-contents .frame .text1 {
   color: #9F9F9F;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1241,7 +1219,6 @@ ol {
 }
 .evidence .right .content .contentt .top-contents .text {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -1268,7 +1245,6 @@ ol {
 }
 .evidence .right .scores-and-stars .score-and-star .score .txt1 {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 500;
@@ -1277,7 +1253,6 @@ ol {
 }
 .evidence .right .scores-and-stars .score-and-star .score .txt2 {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1486,7 +1461,6 @@ ol {
 }
 .about .content .topContent .text1 {
   color: #9F9F9F;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1496,7 +1470,6 @@ ol {
 }
 .about .content .topContent .text2 {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -1537,7 +1510,6 @@ ol {
 }
 .about .content .allDescs .descs .content .txt1 {
   color: #343F52;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -1546,7 +1518,6 @@ ol {
 }
 .about .content .allDescs .descs .content .txt2 {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
