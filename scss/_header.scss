@@ -8,11 +8,11 @@
 	@include breakpoint-down(535px){
 		padding: 32px 50px;
 	}
-	.logo {
+	.site-logo {
 		width: 63px;
 		height: 80px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column;  
 		align-items: center;
 		justify-content: space-between;
 		text-transform: uppercase;
@@ -30,37 +30,21 @@
 		}
 	}
 
-	&-menu {
+	.site-menu {
 
 		@include breakpoint-down(1060px) {
 			display: none;
 		}
 
-		&.is-mobile {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 30px;
-			transition: 200ms;
-			cursor: pointer;
-			position: relative;
-
-			&:active {
-				color: #df0000;
-			}
-		}
 	}
 
-	button {
+	.button {
 
 		@include breakpoint-down(1060px) {
 			display: none;
 		}
 	}
-
-}
-
-.menu {
+	.menu {
 	display: flex;
 	align-items: flex-start;
 	gap: 32px;
@@ -110,8 +94,8 @@
 		height: fit-content;
 		padding: 20px 0;
 		background-color: #fff6f6;
-		top: 60px;
-		right: 0;
+		top: 140px;
+		right: 115px;
 		z-index: 100;
 		text-align: center;
 		border-radius: 8px;
@@ -123,196 +107,72 @@
 		@include breakpoint-down(1060px) {
 			display: none;
 		}
+		@include breakpoint-down(1030px){
+			width: 750px;
+		}
+		@include breakpoint-down(965px){
+			width: 700px;
+		}
+		@include breakpoint-down(915px){
+			width: 650px;
+		}
+		@include breakpoint-down(865px){
+			width: 600px;
+		}
+		@include breakpoint-down(815px){
+			width: 550px;
+		}
+		@include breakpoint-down(765px){
+			width: 500px;
+		}
+		@include breakpoint-down(715px){
+			width: 450px;
+		}
+		@include breakpoint-down(665px){
+			width: 400px;
+		}
+		@include breakpoint-down(615px){
+			width: 350px;
+		}
+		@include breakpoint-down(560px){
+			width: 300px;
+		}
+		@include breakpoint-down(533px){
+			right: 100px;
+		}
+		@include breakpoint-down(485px){
+			right: 65px;
+		}
+		@include breakpoint-down(420px){
+			width: 250px;
+		}
+		@include breakpoint-down(370px){
+			width: 200px;
+		}
+
+		.menu-item{
+			font-size: 25px;
+			padding: 5px;
+		}
 	}
 
 	&-toggle {
 		display: none;
-
+		label{
+			width: 30px;
+			height: 30px;
+		}
 		@include breakpoint-down(1060px) {
 			display: block;
 		}
-
-		#check:checked ~ .dropdown {
+		#check:checked ~ .is-mobile {
 			display: block;
 		}
-
 		#check {
 			display: none;
 		}
 	}
 }
-
-@media (max-width: 1060px) {
-
-	header {
-
-		.menu {
-			display: none;
-		}
-
-		.button {
-			display: none;
-		}
-	}
 }
 
-@media (min-width: 1060px) {
 
-	header {
-
-		.smallmenu {
-			display: none;
-		}
-	}
-}
-
-@media (max-width: 1000px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 700px;
-			}
-		}
-	}
-}
-
-@media (max-width: 900px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 600px;
-			}
-		}
-	}
-}
-
-@media (max-width: 800px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 500px;
-			}
-		}
-	}
-}
-
-@media (max-width: 700px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 450px;
-			}
-		}
-	}
-}
-
-@media (max-width: 650px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 400px;
-			}
-		}
-	}
-}
-
-@media (max-width: 602px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 350px;
-			}
-		}
-	}
-}
-
-@media (max-width: 550px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 300px;
-			}
-		}
-	}
-}
-
-@media (max-width: 500px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 250px;
-			}
-		}
-	}
-}
-
-@media (max-width: 450px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 200px;
-			}
-		}
-	}
-}
-
-@media (max-width: 400px) {
-
-	header {
-		padding: 32px 50px;
-
-		.smallmenu {
-
-			.dropdown {
-				width: 250px;
-			}
-		}
-	}
-}
-
-@media (max-width: 355px) {
-
-	header {
-
-		.smallmenu {
-
-			.dropdown {
-				width: 200px;
-			}
-		}
-	}
-}
-
-@media (max-width: 535px) {
-
-	header {
-		padding: 32px 50px;
-	}
-}

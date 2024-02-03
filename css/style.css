@@ -10,12 +10,6 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -431,7 +425,7 @@ ol {
     padding: 32px 50px;
   }
 }
-.site-header .logo {
+.site-header .site-logo {
   width: 63px;
   height: 80px;
   display: flex;
@@ -443,37 +437,24 @@ ol {
   color: #343f52;
   font-family: "Space Grotesk", sans-serif;
 }
-.site-header .logo img {
+.site-header .site-logo img {
   width: 47.5px;
   height: 54px;
 }
-.site-header .logo p {
+.site-header .site-logo p {
   font-size: 17px;
 }
 @media only screen and (max-width: 1059px) {
-  .site-header-menu {
+  .site-header .site-menu {
     display: none;
   }
-}
-.site-header-menu.is-mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  transition: 200ms;
-  cursor: pointer;
-  position: relative;
-}
-.site-header-menu.is-mobile:active {
-  color: #df0000;
 }
 @media only screen and (max-width: 1059px) {
-  .site-header button {
+  .site-header .button {
     display: none;
   }
 }
-
-.menu {
+.site-header .menu {
   display: flex;
   align-items: flex-start;
   gap: 32px;
@@ -482,19 +463,19 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 1199px) {
-  .menu {
+  .site-header .menu {
     gap: 20px;
   }
 }
 @media only screen and (max-width: 1059px) {
-  .menu .menu {
+  .site-header .menu .menu {
     display: none;
   }
-  .menu .button {
+  .site-header .menu .button {
     display: none;
   }
 }
-.menu-item {
+.site-header .menu-item {
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -503,22 +484,22 @@ ol {
   transition: 200ms;
   color: #343f52;
 }
-.menu-item a {
+.site-header .menu-item a {
   color: #343f52;
   text-decoration: none;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.menu-item a:hover {
+.site-header .menu-item a:hover {
   color: #df0000;
 }
-.menu.is-mobile {
+.site-header .menu.is-mobile {
   position: absolute;
   width: 800px;
   height: fit-content;
   padding: 20px 0;
   background-color: #fff6f6;
-  top: 60px;
-  right: 0;
+  top: 140px;
+  right: 115px;
   z-index: 100;
   text-align: center;
   border-radius: 8px;
@@ -528,101 +509,103 @@ ol {
   display: none;
 }
 @media only screen and (max-width: 1059px) {
-  .menu.is-mobile {
+  .site-header .menu.is-mobile {
     display: none;
   }
 }
-.menu-toggle {
-  display: none;
-}
-@media only screen and (max-width: 1059px) {
-  .menu-toggle {
-    display: block;
+@media only screen and (max-width: 1029px) {
+  .site-header .menu.is-mobile {
+    width: 750px;
   }
 }
-.menu-toggle #check:checked ~ .dropdown {
-  display: block;
-}
-.menu-toggle #check {
-  display: none;
-}
-
-@media (max-width: 1060px) {
-  header .menu {
-    display: none;
-  }
-  header .button {
-    display: none;
-  }
-}
-@media (min-width: 1060px) {
-  header .smallmenu {
-    display: none;
-  }
-}
-@media (max-width: 1000px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 964px) {
+  .site-header .menu.is-mobile {
     width: 700px;
   }
 }
-@media (max-width: 900px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 914px) {
+  .site-header .menu.is-mobile {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .site-header .menu.is-mobile {
     width: 600px;
   }
 }
-@media (max-width: 800px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 814px) {
+  .site-header .menu.is-mobile {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 764px) {
+  .site-header .menu.is-mobile {
     width: 500px;
   }
 }
-@media (max-width: 700px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 714px) {
+  .site-header .menu.is-mobile {
     width: 450px;
   }
 }
-@media (max-width: 650px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 664px) {
+  .site-header .menu.is-mobile {
     width: 400px;
   }
 }
-@media (max-width: 602px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 614px) {
+  .site-header .menu.is-mobile {
     width: 350px;
   }
 }
-@media (max-width: 550px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 559px) {
+  .site-header .menu.is-mobile {
     width: 300px;
   }
 }
-@media (max-width: 500px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 532px) {
+  .site-header .menu.is-mobile {
+    right: 100px;
+  }
+}
+@media only screen and (max-width: 484px) {
+  .site-header .menu.is-mobile {
+    right: 65px;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .site-header .menu.is-mobile {
     width: 250px;
   }
 }
-@media (max-width: 450px) {
-  header .smallmenu .dropdown {
+@media only screen and (max-width: 369px) {
+  .site-header .menu.is-mobile {
     width: 200px;
   }
 }
-@media (max-width: 400px) {
-  header {
-    padding: 32px 50px;
-  }
-  header .smallmenu .dropdown {
-    width: 250px;
+.site-header .menu.is-mobile .menu-item {
+  font-size: 25px;
+  padding: 5px;
+}
+.site-header .menu-toggle {
+  display: none;
+}
+.site-header .menu-toggle label {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 1059px) {
+  .site-header .menu-toggle {
+    display: block;
   }
 }
-@media (max-width: 355px) {
-  header .smallmenu .dropdown {
-    width: 200px;
-  }
+.site-header .menu-toggle #check:checked ~ .is-mobile {
+  display: block;
 }
-@media (max-width: 535px) {
-  header {
-    padding: 32px 50px;
-  }
+.site-header .menu-toggle #check {
+  display: none;
 }
+
 /*--------------------------------------------------------------
 # Hero section.
 --------------------------------------------------------------*/
@@ -1286,6 +1269,10 @@ ol {
 # Our features section
 --------------------------------------------------------------*/
 .about {
+  width: fit-content;
+  height: fit-content;
+}
+.about .container {
   width: 100%;
   display: flex;
   padding: 120px 100px;
@@ -1295,16 +1282,16 @@ ol {
   overflow: hidden;
 }
 @media only screen and (max-width: 534px) {
-  .about {
+  .about .container {
     padding: 70px 50px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about {
+  .about .container {
     flex-direction: column;
   }
 }
-.about .images {
+.about .container .images {
   display: flex;
   width: 671px;
   flex-direction: column;
@@ -1312,21 +1299,21 @@ ol {
   gap: 32px;
 }
 @media only screen and (max-width: 1345px) {
-  .about .images {
+  .about .container .images {
     width: 500px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .images {
+  .about .container .images {
     width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .images {
+  .about .container .images {
     gap: 10px;
   }
 }
-.about .images .topImage {
+.about .container .images .topImage {
   display: flex;
   padding: 150px 310px;
   flex-direction: column;
@@ -1338,40 +1325,40 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .images .topImage {
+  .about .container .images .topImage {
     padding: 110px 210px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .images .topImage {
+  .about .container .images .topImage {
     width: 100%;
     height: 350px;
     padding: 110px 110px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .images .topImage {
+  .about .container .images .topImage {
     width: 100%;
     height: 150px;
   }
 }
-.about .images .bottomImages {
+.about .container .images .bottomImages {
   display: flex;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
 @media only screen and (max-width: 1219px) {
-  .about .images .bottomImages {
+  .about .container .images .bottomImages {
     width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .images .bottomImages {
+  .about .container .images .bottomImages {
     gap: 10px;
   }
 }
-.about .images .bottomImages .leftImage {
+.about .container .images .bottomImages .leftImage {
   display: flex;
   width: 310px;
   height: 297px;
@@ -1385,7 +1372,7 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .images .bottomImages .leftImage {
+  .about .container .images .bottomImages .leftImage {
     width: 210px;
     height: 177px;
     padding: 100px;
@@ -1393,20 +1380,20 @@ ol {
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .images .bottomImages .leftImage {
+  .about .container .images .bottomImages .leftImage {
     width: 50%;
     height: 250px;
     padding: 50px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .images .bottomImages .leftImage {
+  .about .container .images .bottomImages .leftImage {
     width: 50%;
     height: 100px;
     background-position: top;
   }
 }
-.about .images .bottomImages .rightImage {
+.about .container .images .bottomImages .rightImage {
   display: flex;
   width: 329px;
   height: 272px;
@@ -1420,26 +1407,26 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .images .bottomImages .rightImage {
+  .about .container .images .bottomImages .rightImage {
     width: 210px;
     height: 177px;
     padding: 100px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .images .bottomImages .rightImage {
+  .about .container .images .bottomImages .rightImage {
     width: 50%;
     height: 250px;
     padding: 50px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .images .bottomImages .rightImage {
+  .about .container .images .bottomImages .rightImage {
     width: 50%;
     height: 100px;
   }
 }
-.about .content {
+.about .container .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1447,7 +1434,7 @@ ol {
   gap: 40px;
   flex: 1 0 0;
 }
-.about .content .topContent {
+.about .container .content .topContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1455,7 +1442,7 @@ ol {
   gap: 16px;
   align-self: stretch;
 }
-.about .content .topContent .text1 {
+.about .container .content .topContent .text1 {
   color: #9F9F9F;
   font-size: 17px;
   font-style: normal;
@@ -1464,7 +1451,7 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
-.about .content .topContent .text2 {
+.about .container .content .topContent .text2 {
   color: #343F52;
   font-size: 44px;
   font-style: normal;
@@ -1473,11 +1460,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .about .content .topContent .text2 {
+  .about .container .content .topContent .text2 {
     font-size: 30px;
   }
 }
-.about .content .allDescs {
+.about .container .content .allDescs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1485,26 +1472,26 @@ ol {
   gap: 30px;
   align-self: stretch;
 }
-.about .content .allDescs .descs {
+.about .container .content .allDescs .descs {
   display: flex;
   align-items: center;
   gap: 30px;
   align-self: stretch;
 }
 @media only screen and (max-width: 639px) {
-  .about .content .allDescs .descs {
+  .about .container .content .allDescs .descs {
     flex-direction: column;
     align-items: start;
   }
 }
-.about .content .allDescs .descs .content {
+.about .container .content .allDescs .descs .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   flex: 1 0 0;
 }
-.about .content .allDescs .descs .content .txt1 {
+.about .container .content .allDescs .descs .content .txt1 {
   color: #343F52;
   font-size: 21px;
   font-style: normal;
@@ -1512,7 +1499,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.about .content .allDescs .descs .content .txt2 {
+.about .container .content .allDescs .descs .content .txt2 {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -1556,7 +1543,6 @@ ol {
 .price .topContent .topText {
   color: #9F9F9F;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1566,7 +1552,6 @@ ol {
 .price .topContent .bottomText {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -1606,7 +1591,6 @@ ol {
 .price .cards .card .topContent .txt1 {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -1617,7 +1601,6 @@ ol {
 .price .cards .card .topContent .txt2 {
   color: #343F52;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1645,7 +1628,6 @@ ol {
 }
 .price .cards .card .lines .line .desc {
   color: #60697B;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -1663,7 +1645,6 @@ ol {
 }
 .price .cards .card .button .btnText {
   color: #FFF;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -1708,7 +1689,6 @@ ol {
 }
 .footer .topanddot .top .text {
   color: #FFF;
-  font-family: "Space Grotesk";
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -1726,7 +1706,6 @@ ol {
 }
 .footer .topanddot .top .button .btntxt {
   color: #FFF;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -1770,7 +1749,6 @@ ol {
 .footer .cards .cardd .logo .logotxt {
   margin: 0;
   color: #FFF;
-  font-family: "Space Grotesk";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -1779,7 +1757,6 @@ ol {
 }
 .footer .cards .cardd .text {
   color: #FFF;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -1808,7 +1785,6 @@ ol {
 .footer .cards .cardd .inputt .buttonnn .buttonntext {
   padding: 16px 32px;
   color: #FFF;
-  font-family: Inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
