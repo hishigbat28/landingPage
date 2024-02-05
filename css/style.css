@@ -1587,6 +1587,11 @@ ol {
     width: 100%;
   }
 }
+@media only screen and (max-width: 534px) {
+  .price .topContent {
+    align-items: start;
+  }
+}
 .price .topContent .topText {
   color: #9F9F9F;
   text-align: center;
@@ -1618,6 +1623,12 @@ ol {
   gap: 40px;
   align-self: stretch;
 }
+@media only screen and (max-width: 1309px) {
+  .price .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .price .cards .card {
   display: flex;
   padding: 50px 100px;
@@ -1627,6 +1638,26 @@ ol {
   gap: 40px;
   flex: 1 0 0;
   border: none;
+}
+@media only screen and (max-width: 1309px) {
+  .price .cards .card {
+    padding: 50px 150px;
+  }
+}
+@media only screen and (max-width: 687px) {
+  .price .cards .card {
+    padding: 50px 100px;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .price .cards .card {
+    padding: 40px 50px;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .price .cards .card {
+    padding: 32px 40px;
+  }
 }
 .price .cards .card .topContent {
   display: flex;
@@ -1644,6 +1675,11 @@ ol {
   line-height: normal;
   text-transform: uppercase;
   margin: 0;
+}
+@media only screen and (max-width: 687px) {
+  .price .cards .card .topContent .txt1 {
+    text-align: left;
+  }
 }
 .price .cards .card .topContent .txt2 {
   color: #343F52;
@@ -1699,6 +1735,16 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
+@media only screen and (max-width: 374px) {
+  .price .cards .card .button .btnText {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1423px) {
+  .price .cards .card .button .btnText {
+    font-size: 14px;
+  }
+}
 .price .cards .card .button .btnIcon {
   display: flex;
   flex-direction: column;
@@ -1720,6 +1766,11 @@ ol {
   width: 100%;
   overflow: hidden;
 }
+@media only screen and (max-width: 534px) {
+  .footer {
+    padding: 70px 50px;
+  }
+}
 .footer .topanddot {
   display: flex;
   flex-direction: column;
@@ -1734,6 +1785,13 @@ ol {
   align-items: flex-end;
   align-self: stretch;
 }
+@media only screen and (max-width: 1216px) {
+  .footer .topanddot .top {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+}
 .footer .topanddot .top .text {
   color: #FFF;
   font-size: 36px;
@@ -1741,6 +1799,11 @@ ol {
   font-weight: 500;
   line-height: 120%;
   margin: 0;
+}
+@media only screen and (max-width: 534px) {
+  .footer .topanddot .top .text {
+    font-size: 30px;
+  }
 }
 .footer .topanddot .top .button {
   display: flex;
@@ -1781,6 +1844,11 @@ ol {
   gap: 100px;
   align-self: stretch;
 }
+@media only screen and (max-width: 1197px) {
+  .footer .cards {
+    flex-direction: column;
+  }
+}
 .footer .cards .cardd {
   display: flex;
   flex-direction: column;
@@ -1815,6 +1883,11 @@ ol {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 479px) {
+  .footer .cards .cardd .inputt {
+    width: 100%;
+  }
+}
 .footer .cards .cardd .inputt input {
   height: 100%;
   padding-left: 16px;
@@ -1822,6 +1895,12 @@ ol {
   border-bottom-left-radius: 8px;
   border: none;
   outline: none;
+}
+@media only screen and (max-width: 479px) {
+  .footer .cards .cardd .inputt input {
+    font-size: 12px;
+    padding-right: -20px;
+  }
 }
 .footer .cards .cardd .inputt .buttonnn {
   height: 100%;

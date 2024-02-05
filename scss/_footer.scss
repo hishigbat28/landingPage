@@ -8,6 +8,9 @@
     background: #10003E;
     width: 100%;
     overflow: hidden;
+    @include breakpoint-down(535px){
+        padding: 70px 50px;
+    };
     .topanddot{
         display: flex;
         flex-direction: column;
@@ -20,6 +23,11 @@
             justify-content: space-between;
             align-items: flex-end;
             align-self: stretch;
+            @include breakpoint-down(1217px){
+            flex-direction: column;
+            align-items: start;
+            gap: 40px;
+            }
             .text{
                 color: #FFF;
                 font-size: 36px;
@@ -27,6 +35,9 @@
                 font-weight: 500;
                 line-height: 120%;  
                 margin: 0;
+                @include breakpoint-down(535px){
+                    font-size: 30px;
+                }
             }
             .button{
                 display: flex;
@@ -68,6 +79,9 @@
         align-items: flex-start;
         gap: 100px;
         align-self: stretch;
+        @include breakpoint-down(1198px){
+            flex-direction: column;
+        }
         .cardd{
             display: flex;
             flex-direction: column;
@@ -95,12 +109,16 @@
                 font-weight: 400;
                 line-height: 160%; 
                 margin: 0;
+                
             }
             .inputt{
                 // width: 200px;
                 height: 52px;
                 display: flex;
                 align-items: center;
+                @include breakpoint-down(480px){
+                    width: 100%;
+                }
                 input{
                     // width: 100%;
                     height: 100%;
@@ -109,6 +127,10 @@
                     border-bottom-left-radius: 8px;
                     border: none;   
                     outline: none;
+                    @include breakpoint-down(480px){
+                    font-size: 12px;
+                    padding-right: -20px;
+                }
                 }
                 .buttonnn{
                     height: 100%;
@@ -125,6 +147,7 @@
                         font-weight: 600;
                         line-height: normal;
                         // margin: 0;
+                        
                     }
                 }
             }
