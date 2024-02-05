@@ -8,6 +8,9 @@
     gap: 50px;
     align-self: stretch;
     overflow: hidden;
+    @include breakpoint-down(535px){
+        padding: 70px 50px;
+    }
     .topContent{
         display: flex;
         width: 100%;
@@ -15,6 +18,9 @@
         justify-content: center;
         align-items: center;
         gap: 16px;
+        @include breakpoint-down(535px){
+            align-items: start;
+        }
         .topText{
             color: #9F9F9F;
             text-align: center;
@@ -30,6 +36,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 130%;
+            @include breakpoint-down(535px){
+                font-size: 30px;
+                text-align: left;
+            }
         }
     }
     .allChoices{
@@ -39,12 +49,18 @@
         align-items: center;
         gap: 44px;
         align-self: stretch;
+        @include breakpoint-down(535px){
+            justify-content: flex-start;
+        }
         .choices{
             display: flex;
             justify-content: center;
             align-items: flex-start;
             gap: 32px;
             align-self: stretch;
+            @include breakpoint-down(995px){
+                flex-direction: column;
+            }
             .choice{
                 display: flex;
                 padding: 32px;
@@ -52,6 +68,11 @@
                 gap: 32px;
                 flex: 1 0 0;
                 border-radius: 8px;
+                @include breakpoint-down(535px){
+                    flex-direction: column;
+                    padding: 0;
+                    gap: 0px;
+                }
                 .number{
                     color: #DF0000;
                     text-align: center;
@@ -83,37 +104,6 @@
                         line-height: 160%; 
                         margin: 0;
                     }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:535px){
-    .choicee{
-        .topContent{
-            .bottomText{
-                font-size: 30px;
-            }
-        }
-    }
-}
-@media (max-width:995px){
-    .choicee{
-        .allChoices{
-            .choices{
-                flex-direction: column;
-            }
-        }
-    }
-}
-@media (max-width:535px){
-    .choicee{
-        padding: 100px 50px;
-        .allChoices{
-            .choices{
-                .choice{
-                    flex-direction: column;
                 }
             }
         }

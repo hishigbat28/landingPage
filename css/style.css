@@ -616,6 +616,11 @@ ol {
   background-color: #FFF6F6;
   overflow: hidden;
 }
+@media only screen and (max-width: 1293px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+}
 .home .left {
   width: 50%;
   display: flex;
@@ -624,6 +629,22 @@ ol {
   align-items: flex-start;
   gap: 25px;
 }
+@media only screen and (max-width: 1293px) {
+  .home .left {
+    width: 100%;
+    padding: 100px 100px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .home .left {
+    padding: 60px 100px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .home .left {
+    padding: 70px 50px;
+  }
+}
 .home .left .title {
   font-size: 54px;
   font-weight: 700;
@@ -631,12 +652,22 @@ ol {
   color: #343F52;
   font-style: normal;
 }
+@media only screen and (max-width: 534px) {
+  .home .left .title {
+    font-size: 30px;
+  }
+}
 .home .left .text {
   font-size: 25px;
   color: #60697B;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+}
+@media only screen and (max-width: 534px) {
+  .home .left .text {
+    font-size: 30px;
+  }
 }
 .home .left .button {
   display: flex;
@@ -666,6 +697,22 @@ ol {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1459px) {
+  .home .right {
+    height: 820px;
+  }
+}
+@media only screen and (max-width: 1307px) {
+  .home .right {
+    height: 920px;
+  }
+}
+@media only screen and (max-width: 1293px) {
+  .home .right {
+    width: 100%;
+    height: 500px;
+  }
+}
 .home .right i {
   color: red;
   font-size: 100px;
@@ -673,45 +720,6 @@ ol {
   border-radius: 60px;
 }
 
-@media (max-width: 1460px) {
-  .home .right {
-    height: 820px;
-  }
-}
-@media (max-width: 1308px) {
-  .home .right {
-    height: 920px;
-  }
-}
-@media (max-width: 1294px) {
-  .home {
-    flex-direction: column-reverse;
-  }
-  .home .left {
-    width: 100%;
-    padding: 100px 100px;
-  }
-  .home .right {
-    width: 100%;
-    height: 500px;
-  }
-}
-@media (max-width: 700px) {
-  .home .left {
-    padding: 60px 100px;
-  }
-}
-@media (max-width: 535px) {
-  .home .left {
-    padding: 100px 50px;
-  }
-  .home .left .title {
-    font-size: 30px;
-  }
-  .home .left .text {
-    font-size: 30px;
-  }
-}
 /*--------------------------------------------------------------
 # Why choose section.
 --------------------------------------------------------------*/
@@ -726,6 +734,11 @@ ol {
   align-self: stretch;
   overflow: hidden;
 }
+@media only screen and (max-width: 534px) {
+  .choicee {
+    padding: 70px 50px;
+  }
+}
 .choicee .topContent {
   display: flex;
   width: 100%;
@@ -733,6 +746,11 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+@media only screen and (max-width: 534px) {
+  .choicee .topContent {
+    align-items: start;
+  }
 }
 .choicee .topContent .topText {
   color: #9F9F9F;
@@ -750,6 +768,12 @@ ol {
   font-weight: 700;
   line-height: 130%;
 }
+@media only screen and (max-width: 534px) {
+  .choicee .topContent .bottomText {
+    font-size: 30px;
+    text-align: left;
+  }
+}
 .choicee .allChoices {
   display: flex;
   flex-direction: column;
@@ -758,12 +782,22 @@ ol {
   gap: 44px;
   align-self: stretch;
 }
+@media only screen and (max-width: 534px) {
+  .choicee .allChoices {
+    justify-content: flex-start;
+  }
+}
 .choicee .allChoices .choices {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
+}
+@media only screen and (max-width: 994px) {
+  .choicee .allChoices .choices {
+    flex-direction: column;
+  }
 }
 .choicee .allChoices .choices .choice {
   display: flex;
@@ -772,6 +806,13 @@ ol {
   gap: 32px;
   flex: 1 0 0;
   border-radius: 8px;
+}
+@media only screen and (max-width: 534px) {
+  .choicee .allChoices .choices .choice {
+    flex-direction: column;
+    padding: 0;
+    gap: 0px;
+  }
 }
 .choicee .allChoices .choices .choice .number {
   color: #DF0000;
@@ -806,24 +847,6 @@ ol {
   margin: 0;
 }
 
-@media (max-width: 535px) {
-  .choicee .topContent .bottomText {
-    font-size: 30px;
-  }
-}
-@media (max-width: 995px) {
-  .choicee .allChoices .choices {
-    flex-direction: column;
-  }
-}
-@media (max-width: 535px) {
-  .choicee {
-    padding: 100px 50px;
-  }
-  .choicee .allChoices .choices .choice {
-    flex-direction: column;
-  }
-}
 /*--------------------------------------------------------------
 # Our customers Section.
 --------------------------------------------------------------*/
@@ -839,6 +862,11 @@ ol {
   background: #FFF6F6;
   overflow: hidden;
 }
+@media only screen and (max-width: 534px) {
+  .guarantee {
+    padding: 70px 50px;
+  }
+}
 .guarantee .top-content {
   display: flex;
   width: 100%;
@@ -846,6 +874,11 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+@media only screen and (max-width: 534px) {
+  .guarantee .top-content {
+    align-items: start;
+  }
 }
 .guarantee .top-content .toptext {
   color: #9F9F9F;
@@ -855,6 +888,11 @@ ol {
   font-weight: 700;
   line-height: normal;
 }
+@media only screen and (max-width: 534px) {
+  .guarantee .top-content .toptext {
+    font-size: 17px;
+  }
+}
 .guarantee .top-content .bottomtext {
   color: #343F52;
   text-align: center;
@@ -862,6 +900,12 @@ ol {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+@media only screen and (max-width: 534px) {
+  .guarantee .top-content .bottomtext {
+    font-size: 30px;
+    text-align: left;
+  }
 }
 .guarantee .allCards {
   display: flex;
@@ -877,6 +921,11 @@ ol {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 1342px) {
+  .guarantee .allCards .cards {
+    flex-direction: column;
+  }
 }
 .guarantee .allCards .cards .card {
   display: flex;
@@ -908,6 +957,11 @@ ol {
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+}
+@media only screen and (max-width: 429px) {
+  .guarantee .allCards .cards .card .star-and-comment p {
+    font-size: 12px;
+  }
 }
 .guarantee .allCards .cards .card .image-and-name {
   display: flex;
@@ -945,6 +999,11 @@ ol {
   font-weight: 700;
   line-height: 4px;
 }
+@media only screen and (max-width: 429px) {
+  .guarantee .allCards .cards .card .image-and-name .name .peoplename {
+    font-size: 14px;
+  }
+}
 .guarantee .allCards .cards .card .image-and-name .name .professional {
   color: #9F9F9F;
   text-align: center;
@@ -953,35 +1012,12 @@ ol {
   font-weight: 500;
   line-height: normal;
 }
-
-@media (max-width: 535px) {
-  .guarantee {
-    padding: 70px 50px;
-  }
-  .guarantee .top-content .toptext {
-    font-size: 17px;
-  }
-  .guarantee .top-content .bottomtext {
-    font-size: 30px;
-    text-align: left;
-  }
-}
-@media (max-width: 1343px) {
-  .guarantee .allCards .cards {
-    flex-direction: column;
-  }
-}
-@media (max-width: 430px) {
-  .guarantee .allCards .cards .card .star-and-comment p {
-    font-size: 12px;
-  }
-  .guarantee .allCards .cards .card .image-and-name .name .peoplename {
-    font-size: 14px;
-  }
+@media only screen and (max-width: 429px) {
   .guarantee .allCards .cards .card .image-and-name .name .professional {
     font-size: 10px;
   }
 }
+
 /*--------------------------------------------------------------
 # What is your plan section.
 --------------------------------------------------------------*/
@@ -993,6 +1029,16 @@ ol {
   gap: 100px;
   align-self: stretch;
   overflow: hidden;
+}
+@media only screen and (max-width: 1089px) {
+  .plans {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .plans {
+    padding: 70px 50px;
+  }
 }
 .plans .topContent {
   display: flex;
@@ -1017,6 +1063,11 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
+@media only screen and (max-width: 534px) {
+  .plans .topContent .first2line .topText {
+    font-size: 17px;
+  }
+}
 .plans .topContent .first2line .bottomText {
   color: #343F52;
   font-size: 44px;
@@ -1024,6 +1075,11 @@ ol {
   font-weight: 700;
   line-height: 120%;
   margin: 0;
+}
+@media only screen and (max-width: 534px) {
+  .plans .topContent .first2line .bottomText {
+    font-size: 30px;
+  }
 }
 .plans .topContent .middleText {
   color: #60697B;
@@ -1070,6 +1126,12 @@ ol {
   background: #FFF6F6;
   border: none;
 }
+@media only screen and (max-width: 699px) {
+  .plans .cards .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .plans .cards .card .icon {
   display: flex;
   padding: 2px 3px;
@@ -1100,28 +1162,6 @@ ol {
   margin: 0;
 }
 
-@media (max-width: 535px) {
-  .plans {
-    padding: 70px 50px;
-  }
-  .plans .topContent .first2line .topText {
-    font-size: 17px;
-  }
-  .plans .topContent .first2line .bottomText {
-    font-size: 30px;
-  }
-}
-@media (max-width: 1090px) {
-  .plans {
-    flex-direction: column;
-  }
-}
-@media (max-width: 700px) {
-  .plans .cards .card {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /*--------------------------------------------------------------
 # User Revies Section.
 --------------------------------------------------------------*/
@@ -1132,6 +1172,11 @@ ol {
   background: #FFF6F6;
   width: 100%;
   overflow: hidden;
+}
+@media only screen and (max-width: 1373px) {
+  .evidence {
+    flex-direction: column;
+  }
 }
 .evidence .left {
   display: flex;
@@ -1150,6 +1195,12 @@ ol {
   align-items: flex-start;
   gap: 30px;
   flex: 1 0 0;
+}
+@media only screen and (max-width: 534px) {
+  .evidence .right {
+    width: 100%;
+    padding: 70px 50px;
+  }
 }
 .evidence .right .content {
   display: flex;
@@ -1187,6 +1238,11 @@ ol {
   line-height: normal;
   margin: 0;
 }
+@media only screen and (max-width: 534px) {
+  .evidence .right .content .contentt .top-contents .frame .text1 {
+    font-size: 17px;
+  }
+}
 .evidence .right .content .contentt .top-contents .frame .text2 {
   color: #343F52;
   font-family: "Space Grotesk";
@@ -1195,6 +1251,11 @@ ol {
   font-weight: 700;
   line-height: 130%;
   margin: 0;
+}
+@media only screen and (max-width: 534px) {
+  .evidence .right .content .contentt .top-contents .frame .text2 {
+    font-size: 30px;
+  }
 }
 .evidence .right .content .contentt .top-contents .text {
   color: #60697B;
@@ -1209,6 +1270,12 @@ ol {
   align-items: flex-start;
   gap: 80px;
   align-self: stretch;
+}
+@media only screen and (max-width: 534px) {
+  .evidence .right .scores-and-stars {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 .evidence .right .scores-and-stars .score-and-star {
   display: flex;
@@ -1245,26 +1312,6 @@ ol {
   align-self: stretch;
 }
 
-@media (max-width: 1374px) {
-  .evidence {
-    flex-direction: column;
-  }
-}
-@media (max-width: 535px) {
-  .evidence .right {
-    width: 100%;
-    padding: 70px 50px;
-  }
-  .evidence .right .scores-and-stars {
-    flex-direction: column;
-  }
-  .evidence .right .content .contentt .top-contents .frame .text1 {
-    font-size: 17px;
-  }
-  .evidence .right .content .contentt .top-contents .frame .text2 {
-    font-size: 30px;
-  }
-}
 /*--------------------------------------------------------------
 # Our features section
 --------------------------------------------------------------*/

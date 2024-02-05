@@ -4,6 +4,9 @@
     display: flex;
     background-color: #FFF6F6;
     overflow: hidden;
+    @include breakpoint-down(1294px){
+        flex-direction: column-reverse;
+    }
     .left{  
         width: 50%;
         display: flex;
@@ -11,12 +14,25 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 25px;
-        .title{
+        @include breakpoint-down(1294px){
+            width: 100%;
+            padding: 100px 100px;
+        }
+        @include breakpoint-down(700px){
+            padding: 60px 100px;
+        }
+        @include breakpoint-down(535px){
+            padding: 70px 50px;
+        }
+        .title{ 
             font-size: 54px;
             font-weight: 700;
             line-height: 120%;
             color: #343F52;
             font-style: normal;
+            @include breakpoint-down(535px){
+                font-size: 30px;
+            }
         }
         .text{
             font-size: 25px;
@@ -24,6 +40,9 @@
             font-style: normal;
             font-weight: 500;
             line-height: 160%;
+            @include breakpoint-down(535px){
+                font-size: 30px;
+            }
         }
         .button{
              display: flex;
@@ -53,58 +72,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include breakpoint-down(1460px){
+            height: 820px;
+        }
+        @include breakpoint-down(1308px){
+            height: 920px;
+        }
+        @include breakpoint-down(1294px){
+            width: 100%;
+            height: 500px;
+        }
         i{
             color: red;
             font-size: 100px;
             background-color: rgb(255, 255, 255);
             border-radius: 60px;
-        }
-    }
-}
-@media (max-width:1460px){
-    .home{
-        .right{
-            height: 820px;
-        }
-    }
-}
-@media (max-width:1308px){
-    .home{
-        .right{
-            height: 920px;
-        }
-    }
-} 
-@media (max-width:1294px){
-    .home{
-        flex-direction: column-reverse;
-        .left{
-            width: 100%;
-            padding: 100px 100px;
-        }
-        .right{
-            width: 100%;
-            height: 500px;
-        }
-    }
-}
-@media (max-width:700px){
-    .home{
-        .left{
-            padding: 60px 100px;
-        }
-    }
-}
-@media (max-width:535px){
-    .home{
-        .left{
-            padding: 100px 50px;
-            .title{
-                font-size: 30px;
-            }
-            .text{
-                font-size: 30px;
-            }
         }
     }
 }

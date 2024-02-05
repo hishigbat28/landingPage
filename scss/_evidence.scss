@@ -5,6 +5,9 @@
     background: #FFF6F6;
     width: 100%;
     overflow: hidden;
+    @include breakpoint-down(1374px){
+        flex-direction: column;
+    }
     .left{
         display: flex;
         align-items: flex-start;
@@ -22,6 +25,10 @@
         align-items: flex-start;
         gap: 30px;
         flex: 1 0 0;
+        @include breakpoint-down(535px){
+            width: 100%;
+            padding: 70px 50px;
+        }
         .content{
             display: flex;
             flex-direction: column;
@@ -53,6 +60,9 @@
                             font-weight: 700;
                             line-height: normal;
                             margin: 0;
+                            @include breakpoint-down(535px){
+                                font-size: 17px;
+                            }
                         }
                         .text2{
                             color: #343F52;
@@ -62,6 +72,9 @@
                             font-weight: 700;
                             line-height: 130%; 
                             margin: 0;
+                            @include breakpoint-down(535px){
+                                font-size: 30px;
+                            }
                         }
                     }
                     .text{
@@ -80,6 +93,10 @@
             align-items: flex-start;
             gap: 80px;
             align-self: stretch;
+            @include breakpoint-down(535px){
+                flex-direction: column;
+                gap: 32px;
+            }
             .score-and-star{
                 display: flex;
                 flex-direction: column;
@@ -112,37 +129,6 @@
                     align-items: flex-start;
                     gap: 4px;
                     align-self: stretch;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:1374px){
-    .evidence{
-        flex-direction: column;
-    }
-}
-@media (max-width:535px){
-    .evidence{
-        .right{
-            width: 100%;
-            padding: 70px 50px;
-            .scores-and-stars{
-                flex-direction: column;
-            }
-            .content{
-                .contentt{
-                    .top-contents{
-                        .frame{
-                            .text1{
-                                font-size: 17px;
-                            }
-                            .text2{
-                                font-size: 30px;
-                            }
-                        }
-                    }
                 }
             }
         }

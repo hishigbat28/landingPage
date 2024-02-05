@@ -9,6 +9,9 @@
     align-self: stretch;
     background: #FFF6F6;
     overflow: hidden;
+    @include breakpoint-down(535px){
+        padding: 70px 50px;
+    }
     .top-content{
         display: flex;
         width: 100%;
@@ -16,6 +19,9 @@
         justify-content: center;
         align-items: center;
         gap: 16px;
+        @include breakpoint-down(535px){
+            align-items: start;
+        }
         .toptext{
             color: #9F9F9F;
             text-align: center;
@@ -23,6 +29,9 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            @include breakpoint-down(535px){
+                font-size: 17px;
+            }
         }
         .bottomtext{
             color: #343F52;
@@ -31,6 +40,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 130%;
+            @include breakpoint-down(535px){
+                font-size: 30px;
+                text-align: left;
+            }
         }
     }
     .allCards{
@@ -47,6 +60,9 @@
             gap: 40px;
             // align-self: stretch;
             flex-wrap: wrap;
+            @include breakpoint-down(1343px){
+                flex-direction: column;
+            }
             .card{
                 display: flex;
                 min-height: 400px;
@@ -75,6 +91,9 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 160%;
+                        @include breakpoint-down(430px){
+                            font-size: 12px;
+                        }
                     }
                 }
                 .image-and-name{
@@ -110,6 +129,9 @@
                             font-style: normal;
                             font-weight: 700;
                             line-height: 4px;
+                            @include breakpoint-down(430px){
+                                font-size: 14px;
+                            }
                         }
                         .professional{
                             color: #9F9F9F;
@@ -118,53 +140,7 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:535px){
-    .guarantee{
-        padding: 70px 50px;
-        .top-content{
-            .toptext{
-                font-size: 17px;
-            }
-            .bottomtext{
-                font-size: 30px;
-                text-align: left;
-            }
-        }
-    }
-}
-@media (max-width:1343px){
-    .guarantee{
-        .allCards{
-            .cards{
-                flex-direction: column;
-            }
-        }
-    }
-}
-@media (max-width:430px){
-    .guarantee{
-        .allCards{
-            .cards{
-                .card{
-                    .star-and-comment{
-                        p{
-                            font-size: 12px;
-                        }
-                    }
-                    .image-and-name{
-                        .name{
-                            .peoplename{
-                                font-size: 14px;
-                            }
-                            .professional{
+                            @include breakpoint-down(430px){
                                 font-size: 10px;
                             }
                         }
