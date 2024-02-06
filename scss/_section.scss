@@ -1,0 +1,16 @@
+.site-section {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	&.no-padding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	&.has-background-light {
+		background-color: #fff6f6;
+	}
+}
