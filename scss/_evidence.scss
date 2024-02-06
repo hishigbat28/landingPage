@@ -8,7 +8,7 @@
     @include breakpoint-down(1374px){
         flex-direction: column;
     }
-    .left{
+    &-left{
         display: flex;
         align-items: flex-start;
         flex: 1 0 0;
@@ -18,7 +18,7 @@
         background-size: cover;
         background-position: center;
     }
-    .right{
+    &-right{
         display: flex;
         padding: 150px 90px;
         flex-direction: column;

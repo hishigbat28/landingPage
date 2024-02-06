@@ -12,7 +12,7 @@
     @include breakpoint-down(535px){
         padding: 70px 50px;
     }
-    .topContent{
+    &-top-content{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -24,7 +24,7 @@
             align-items: flex-start;
             gap: 16px;
             align-self: stretch;
-            .topText{
+            .top-text{
                 color: #9F9F9F;
                 font-size: 17px;
                 font-style: normal;
@@ -36,7 +36,7 @@
                     font-size: 17px;
                 }
             }
-            .bottomText{
+            .bottom-text{
                 color: #343F52;
                 font-size: 44px;
                 font-style: normal;
@@ -48,7 +48,7 @@
                 }
             }
         }
-        .middleText{
+        .middle-text{   
             color: #60697B;
             font-size: 17px;
             font-style: normal;
@@ -108,7 +108,7 @@
                 align-items: flex-start;
                 gap: 10px;
                 flex: 1 0 0;
-                .topTextt{
+                .top-Textt{
                     color: #343F52;
                     font-size: 21px;
                     font-style: normal;
@@ -116,7 +116,7 @@
                     line-height: normal;
                     margin: 0;
                 }
-                .bottomText{
+                .bottom-text{
                     color: #60697B;
                     font-size: 17px;
                     font-style: normal;

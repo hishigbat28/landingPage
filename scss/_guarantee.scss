@@ -12,7 +12,7 @@
     @include breakpoint-down(535px){
         padding: 70px 50px;
     }
-    .top-content{
+    &-top-content{
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -22,7 +22,7 @@
         @include breakpoint-down(535px){
             align-items: start;
         }
-        .toptext{
+        .top-text{
             color: #9F9F9F;
             text-align: center;
             font-size: 17px;
@@ -33,7 +33,7 @@
                 font-size: 17px;
             }
         }
-        .bottomtext{
+        .bottom-text{
             color: #343F52;
             text-align: center;
             font-size: 44px;

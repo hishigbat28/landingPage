@@ -1,4 +1,4 @@
-.home{
+.hero{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -7,7 +7,7 @@
     @include breakpoint-down(1294px){
         flex-direction: column-reverse;
     }
-    .left{  
+    &-left{  
         width: 50%;
         display: flex;
         padding: 150px 100px;
@@ -63,7 +63,7 @@
         }
         }
     }
-    .right{
+    &-right{
         width: 50%;
         height: 720px;
         background-image: url('../images/photo1.jpg');

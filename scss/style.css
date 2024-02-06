@@ -611,7 +611,7 @@ ol {
 /*--------------------------------------------------------------
 # Hero section.
 --------------------------------------------------------------*/
-.home {
+.hero {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -620,11 +620,11 @@ ol {
   overflow: hidden;
 }
 @media only screen and (max-width: 1293px) {
-  .home {
+  .hero {
     flex-direction: column-reverse;
   }
 }
-.home .left {
+.hero-left {
   width: 50%;
   display: flex;
   padding: 150px 100px;
@@ -633,22 +633,22 @@ ol {
   gap: 25px;
 }
 @media only screen and (max-width: 1293px) {
-  .home .left {
+  .hero-left {
     width: 100%;
     padding: 100px 100px;
   }
 }
 @media only screen and (max-width: 699px) {
-  .home .left {
+  .hero-left {
     padding: 60px 100px;
   }
 }
 @media only screen and (max-width: 534px) {
-  .home .left {
+  .hero-left {
     padding: 70px 50px;
   }
 }
-.home .left .title {
+.hero-left .title {
   font-size: 54px;
   font-weight: 700;
   line-height: 120%;
@@ -656,11 +656,11 @@ ol {
   font-style: normal;
 }
 @media only screen and (max-width: 534px) {
-  .home .left .title {
+  .hero-left .title {
     font-size: 30px;
   }
 }
-.home .left .text {
+.hero-left .text {
   font-size: 25px;
   color: #60697B;
   font-style: normal;
@@ -668,11 +668,11 @@ ol {
   line-height: 160%;
 }
 @media only screen and (max-width: 534px) {
-  .home .left .text {
+  .hero-left .text {
     font-size: 30px;
   }
 }
-.home .left .button {
+.hero-left .button {
   display: flex;
   padding: 16px 32px;
   justify-content: center;
@@ -686,11 +686,11 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
 }
-.home .left .button i {
+.hero-left .button i {
   width: 12.3px;
   height: 15px;
 }
-.home .right {
+.hero-right {
   width: 50%;
   height: 720px;
   background-image: url("../images/photo1.jpg");
@@ -701,22 +701,22 @@ ol {
   align-items: center;
 }
 @media only screen and (max-width: 1459px) {
-  .home .right {
+  .hero-right {
     height: 820px;
   }
 }
 @media only screen and (max-width: 1307px) {
-  .home .right {
+  .hero-right {
     height: 920px;
   }
 }
 @media only screen and (max-width: 1293px) {
-  .home .right {
+  .hero-right {
     width: 100%;
     height: 500px;
   }
 }
-.home .right i {
+.hero-right i {
   color: red;
   font-size: 100px;
   background-color: rgb(255, 255, 255);
@@ -726,7 +726,7 @@ ol {
 /*--------------------------------------------------------------
 # Why choose section.
 --------------------------------------------------------------*/
-.choicee {
+.choice {
   width: 100%;
   display: flex;
   padding: 120px 100px;
@@ -738,11 +738,11 @@ ol {
   overflow: hidden;
 }
 @media only screen and (max-width: 534px) {
-  .choicee {
+  .choice {
     padding: 70px 50px;
   }
 }
-.choicee .topContent {
+.choice-topcontent {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -751,11 +751,11 @@ ol {
   gap: 16px;
 }
 @media only screen and (max-width: 534px) {
-  .choicee .topContent {
+  .choice-topcontent {
     align-items: start;
   }
 }
-.choicee .topContent .topText {
+.choice-topcontent .top-text {
   color: #9F9F9F;
   text-align: center;
   font-size: 17px;
@@ -763,7 +763,7 @@ ol {
   font-weight: 700;
   line-height: normal;
 }
-.choicee .topContent .bottomText {
+.choice-topcontent .bottom-text {
   color: #343F52;
   text-align: center;
   font-size: 44px;
@@ -772,12 +772,12 @@ ol {
   line-height: 130%;
 }
 @media only screen and (max-width: 534px) {
-  .choicee .topContent .bottomText {
+  .choice-topcontent .bottom-text {
     font-size: 30px;
     text-align: left;
   }
 }
-.choicee .allChoices {
+.choice .all-choices {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -786,11 +786,11 @@ ol {
   align-self: stretch;
 }
 @media only screen and (max-width: 534px) {
-  .choicee .allChoices {
+  .choice .all-choices {
     justify-content: flex-start;
   }
 }
-.choicee .allChoices .choices {
+.choice .all-choices-choices {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -798,11 +798,11 @@ ol {
   align-self: stretch;
 }
 @media only screen and (max-width: 994px) {
-  .choicee .allChoices .choices {
+  .choice .all-choices-choices {
     flex-direction: column;
   }
 }
-.choicee .allChoices .choices .choice {
+.choice .all-choices-choices .choice {
   display: flex;
   padding: 32px;
   align-items: flex-start;
@@ -811,13 +811,13 @@ ol {
   border-radius: 8px;
 }
 @media only screen and (max-width: 534px) {
-  .choicee .allChoices .choices .choice {
+  .choice .all-choices-choices .choice {
     flex-direction: column;
     padding: 0;
     gap: 0px;
   }
 }
-.choicee .allChoices .choices .choice .number {
+.choice .all-choices-choices .choice .number {
   color: #DF0000;
   text-align: center;
   font-size: 44px;
@@ -825,7 +825,7 @@ ol {
   font-weight: 500;
   line-height: normal;
 }
-.choicee .allChoices .choices .choice .content {
+.choice .all-choices-choices .choice .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -833,7 +833,7 @@ ol {
   gap: 12px;
   flex: 1 0 0;
 }
-.choicee .allChoices .choices .choice .content .topText {
+.choice .all-choices-choices .choice .content .top-text {
   color: #343F52;
   font-size: 21px;
   font-style: normal;
@@ -841,7 +841,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.choicee .allChoices .choices .choice .content .bottomText {
+.choice .all-choices-choices .choice .content .bottom-text {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -870,7 +870,7 @@ ol {
     padding: 70px 50px;
   }
 }
-.guarantee .top-content {
+.guarantee-top-content {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -879,11 +879,11 @@ ol {
   gap: 16px;
 }
 @media only screen and (max-width: 534px) {
-  .guarantee .top-content {
+  .guarantee-top-content {
     align-items: start;
   }
 }
-.guarantee .top-content .toptext {
+.guarantee-top-content .top-text {
   color: #9F9F9F;
   text-align: center;
   font-size: 17px;
@@ -892,11 +892,11 @@ ol {
   line-height: normal;
 }
 @media only screen and (max-width: 534px) {
-  .guarantee .top-content .toptext {
+  .guarantee-top-content .top-text {
     font-size: 17px;
   }
 }
-.guarantee .top-content .bottomtext {
+.guarantee-top-content .bottom-text {
   color: #343F52;
   text-align: center;
   font-size: 44px;
@@ -905,7 +905,7 @@ ol {
   line-height: 130%;
 }
 @media only screen and (max-width: 534px) {
-  .guarantee .top-content .bottomtext {
+  .guarantee-top-content .bottom-text {
     font-size: 30px;
     text-align: left;
   }
@@ -1044,21 +1044,21 @@ ol {
     padding: 70px 50px;
   }
 }
-.plans .topContent {
+.plans-top-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
   flex: 1 0 0;
 }
-.plans .topContent .first2line {
+.plans-top-content .first2line {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
 }
-.plans .topContent .first2line .topText {
+.plans-top-content .first2line .top-text {
   color: #9F9F9F;
   font-size: 17px;
   font-style: normal;
@@ -1068,11 +1068,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .plans .topContent .first2line .topText {
+  .plans-top-content .first2line .top-text {
     font-size: 17px;
   }
 }
-.plans .topContent .first2line .bottomText {
+.plans-top-content .first2line .bottom-text {
   color: #343F52;
   font-size: 44px;
   font-style: normal;
@@ -1081,11 +1081,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .plans .topContent .first2line .bottomText {
+  .plans-top-content .first2line .bottom-text {
     font-size: 30px;
   }
 }
-.plans .topContent .middleText {
+.plans-top-content .middle-text {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -1093,7 +1093,7 @@ ol {
   line-height: 160%;
   margin: 0;
 }
-.plans .topContent .button {
+.plans-top-content .button {
   display: flex;
   padding: 16px 32px;
   justify-content: center;
@@ -1107,7 +1107,7 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
 }
-.plans .topContent .button i {
+.plans-top-content .button i {
   width: 12.3px;
   height: 15px;
 }
@@ -1149,7 +1149,7 @@ ol {
   gap: 10px;
   flex: 1 0 0;
 }
-.plans .cards .card .contentt .topTextt {
+.plans .cards .card .contentt .top-Textt {
   color: #343F52;
   font-size: 21px;
   font-style: normal;
@@ -1157,7 +1157,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.plans .cards .card .contentt .bottomText {
+.plans .cards .card .contentt .bottom-text {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -1182,7 +1182,7 @@ ol {
     flex-direction: column;
   }
 }
-.evidence .left {
+.evidence-left {
   display: flex;
   align-items: flex-start;
   flex: 1 0 0;
@@ -1192,7 +1192,7 @@ ol {
   background-size: cover;
   background-position: center;
 }
-.evidence .right {
+.evidence-right {
   display: flex;
   padding: 150px 90px;
   flex-direction: column;
@@ -1201,40 +1201,40 @@ ol {
   flex: 1 0 0;
 }
 @media only screen and (max-width: 534px) {
-  .evidence .right {
+  .evidence-right {
     width: 100%;
     padding: 70px 50px;
   }
 }
-.evidence .right .content {
+.evidence-right .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   align-self: stretch;
 }
-.evidence .right .content .contentt {
+.evidence-right .content .contentt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
 }
-.evidence .right .content .contentt .top-contents {
+.evidence-right .content .contentt .top-contents {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
 }
-.evidence .right .content .contentt .top-contents .frame {
+.evidence-right .content .contentt .top-contents .frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
 }
-.evidence .right .content .contentt .top-contents .frame .text1 {
+.evidence-right .content .contentt .top-contents .frame .text1 {
   color: #9F9F9F;
   font-size: 17px;
   font-style: normal;
@@ -1243,11 +1243,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .evidence .right .content .contentt .top-contents .frame .text1 {
+  .evidence-right .content .contentt .top-contents .frame .text1 {
     font-size: 17px;
   }
 }
-.evidence .right .content .contentt .top-contents .frame .text2 {
+.evidence-right .content .contentt .top-contents .frame .text2 {
   color: #343F52;
   font-family: "Space Grotesk";
   font-size: 44px;
@@ -1257,11 +1257,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .evidence .right .content .contentt .top-contents .frame .text2 {
+  .evidence-right .content .contentt .top-contents .frame .text2 {
     font-size: 30px;
   }
 }
-.evidence .right .content .contentt .top-contents .text {
+.evidence-right .content .contentt .top-contents .text {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -1269,31 +1269,31 @@ ol {
   line-height: 160%;
   margin: 0;
 }
-.evidence .right .scores-and-stars {
+.evidence-right .scores-and-stars {
   display: flex;
   align-items: flex-start;
   gap: 80px;
   align-self: stretch;
 }
 @media only screen and (max-width: 534px) {
-  .evidence .right .scores-and-stars {
+  .evidence-right .scores-and-stars {
     flex-direction: column;
     gap: 32px;
   }
 }
-.evidence .right .scores-and-stars .score-and-star {
+.evidence-right .scores-and-stars .score-and-star {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
-.evidence .right .scores-and-stars .score-and-star .score {
+.evidence-right .scores-and-stars .score-and-star .score {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.evidence .right .scores-and-stars .score-and-star .score .txt1 {
+.evidence-right .scores-and-stars .score-and-star .score .txt1 {
   color: #343F52;
   font-size: 44px;
   font-style: normal;
@@ -1301,7 +1301,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.evidence .right .scores-and-stars .score-and-star .score .txt2 {
+.evidence-right .scores-and-stars .score-and-star .score .txt2 {
   color: #343F52;
   font-size: 17px;
   font-style: normal;
@@ -1309,7 +1309,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.evidence .right .scores-and-stars .score-and-star .star {
+.evidence-right .scores-and-stars .score-and-star .star {
   display: flex;
   align-items: flex-start;
   gap: 4px;
@@ -1325,8 +1325,7 @@ ol {
   height: -moz-fit-content;
   height: fit-content;
 }
-.about .container {
-  width: 100%;
+.about-container {
   display: flex;
   padding: 120px 100px;
   align-items: center;
@@ -1335,16 +1334,16 @@ ol {
   overflow: hidden;
 }
 @media only screen and (max-width: 534px) {
-  .about .container {
+  .about-container {
     padding: 70px 50px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .container {
+  .about-container {
     flex-direction: column;
   }
 }
-.about .container .images {
+.about-container .images {
   display: flex;
   width: 671px;
   flex-direction: column;
@@ -1352,21 +1351,21 @@ ol {
   gap: 32px;
 }
 @media only screen and (max-width: 1345px) {
-  .about .container .images {
+  .about-container .images {
     width: 500px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .container .images {
+  .about-container .images {
     width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .container .images {
+  .about-container .images {
     gap: 10px;
   }
 }
-.about .container .images .topImage {
+.about-container .images .top-image {
   display: flex;
   padding: 150px 310px;
   flex-direction: column;
@@ -1378,40 +1377,40 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .container .images .topImage {
+  .about-container .images .top-image {
     padding: 110px 210px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .container .images .topImage {
+  .about-container .images .top-image {
     width: 100%;
     height: 350px;
     padding: 110px 110px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .container .images .topImage {
+  .about-container .images .top-image {
     width: 100%;
     height: 150px;
   }
 }
-.about .container .images .bottomImages {
+.about-container .images .bottom-images {
   display: flex;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
 @media only screen and (max-width: 1219px) {
-  .about .container .images .bottomImages {
+  .about-container .images .bottom-images {
     width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .container .images .bottomImages {
+  .about-container .images .bottom-images {
     gap: 10px;
   }
 }
-.about .container .images .bottomImages .leftImage {
+.about-container .images .bottom-images .left-image {
   display: flex;
   width: 310px;
   height: 297px;
@@ -1425,7 +1424,7 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .container .images .bottomImages .leftImage {
+  .about-container .images .bottom-images .left-image {
     width: 210px;
     height: 177px;
     padding: 100px;
@@ -1433,20 +1432,20 @@ ol {
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .container .images .bottomImages .leftImage {
+  .about-container .images .bottom-images .left-image {
     width: 50%;
     height: 250px;
     padding: 50px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .container .images .bottomImages .leftImage {
+  .about-container .images .bottom-images .left-image {
     width: 50%;
     height: 100px;
     background-position: top;
   }
 }
-.about .container .images .bottomImages .rightImage {
+.about-container .images .bottom-images .right-image {
   display: flex;
   width: 329px;
   height: 272px;
@@ -1460,26 +1459,26 @@ ol {
   background-position: center;
 }
 @media only screen and (max-width: 1345px) {
-  .about .container .images .bottomImages .rightImage {
+  .about-container .images .bottom-images .right-image {
     width: 210px;
     height: 177px;
     padding: 100px;
   }
 }
 @media only screen and (max-width: 1219px) {
-  .about .container .images .bottomImages .rightImage {
+  .about-container .images .bottom-images .right-image {
     width: 50%;
     height: 250px;
     padding: 50px;
   }
 }
 @media only screen and (max-width: 639px) {
-  .about .container .images .bottomImages .rightImage {
+  .about-container .images .bottom-images .right-image {
     width: 50%;
     height: 100px;
   }
 }
-.about .container .content {
+.about-container .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1487,7 +1486,7 @@ ol {
   gap: 40px;
   flex: 1 0 0;
 }
-.about .container .content .topContent {
+.about-container .content .top-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1495,7 +1494,7 @@ ol {
   gap: 16px;
   align-self: stretch;
 }
-.about .container .content .topContent .text1 {
+.about-container .content .top-content .text1 {
   color: #9F9F9F;
   font-size: 17px;
   font-style: normal;
@@ -1504,7 +1503,7 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
-.about .container .content .topContent .text2 {
+.about-container .content .top-content .text2 {
   color: #343F52;
   font-size: 44px;
   font-style: normal;
@@ -1513,11 +1512,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .about .container .content .topContent .text2 {
+  .about-container .content .top-content .text2 {
     font-size: 30px;
   }
 }
-.about .container .content .allDescs {
+.about-container .content .all-descs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1525,26 +1524,26 @@ ol {
   gap: 30px;
   align-self: stretch;
 }
-.about .container .content .allDescs .descs {
+.about-container .content .all-descs .descs {
   display: flex;
   align-items: center;
   gap: 30px;
   align-self: stretch;
 }
 @media only screen and (max-width: 639px) {
-  .about .container .content .allDescs .descs {
+  .about-container .content .all-descs .descs {
     flex-direction: column;
     align-items: start;
   }
 }
-.about .container .content .allDescs .descs .content {
+.about-container .content .all-descs .descs .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   flex: 1 0 0;
 }
-.about .container .content .allDescs .descs .content .txt1 {
+.about-container .content .all-descs .descs .content .txt1 {
   color: #343F52;
   font-size: 21px;
   font-style: normal;
@@ -1552,7 +1551,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.about .container .content .allDescs .descs .content .txt2 {
+.about-container .content .all-descs .descs .content .txt2 {
   color: #60697B;
   font-size: 17px;
   font-style: normal;
@@ -1580,7 +1579,7 @@ ol {
     padding: 70px 50px;
   }
 }
-.price .topContent {
+.price-top-content {
   display: flex;
   width: 80%;
   flex-direction: column;
@@ -1589,16 +1588,16 @@ ol {
   gap: 16px;
 }
 @media only screen and (max-width: 1219px) {
-  .price .topContent {
+  .price-top-content {
     width: 100%;
   }
 }
 @media only screen and (max-width: 534px) {
-  .price .topContent {
+  .price-top-content {
     align-items: start;
   }
 }
-.price .topContent .topText {
+.price-top-content .top-text {
   color: #9F9F9F;
   text-align: center;
   font-size: 17px;
@@ -1607,7 +1606,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.price .topContent .bottomText {
+.price-top-content .bottom-text {
   color: #343F52;
   text-align: center;
   font-size: 44px;
@@ -1617,7 +1616,7 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .price .topContent .bottomText {
+  .price-top-content .bottom-text {
     font-size: 30px;
     text-align: left;
   }
@@ -1665,14 +1664,14 @@ ol {
     padding: 32px 40px;
   }
 }
-.price .cards .card .topContent {
+.price .cards .card .top-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
 }
-.price .cards .card .topContent .txt1 {
+.price .cards .card .top-content .txt1 {
   color: #343F52;
   text-align: center;
   font-size: 21px;
@@ -1683,11 +1682,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 687px) {
-  .price .cards .card .topContent .txt1 {
+  .price .cards .card .top-content .txt1 {
     text-align: left;
   }
 }
-.price .cards .card .topContent .txt2 {
+.price .cards .card .top-content .txt2 {
   color: #343F52;
   text-align: center;
   font-size: 32px;
@@ -1732,7 +1731,7 @@ ol {
   border-radius: 8px;
   background: #F00;
 }
-.price .cards .card .button .btnText {
+.price .cards .card .button .btn-text {
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -1742,12 +1741,12 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 374px) {
-  .price .cards .card .button .btnText {
+  .price .cards .card .button .btn-text {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 1423px) {
-  .price .cards .card .button .btnText {
+  .price .cards .card .button .btn-text {
     font-size: 14px;
   }
 }
@@ -1777,14 +1776,14 @@ ol {
     padding: 70px 50px;
   }
 }
-.footer .topanddot {
+.footer-top-and-dot {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
 }
-.footer .topanddot .top {
+.footer-top-and-dot .top {
   display: flex;
   padding-bottom: 64px;
   justify-content: space-between;
@@ -1792,13 +1791,13 @@ ol {
   align-self: stretch;
 }
 @media only screen and (max-width: 1216px) {
-  .footer .topanddot .top {
+  .footer-top-and-dot .top {
     flex-direction: column;
     align-items: start;
     gap: 40px;
   }
 }
-.footer .topanddot .top .text {
+.footer-top-and-dot .top .text {
   color: #FFF;
   font-size: 36px;
   font-style: normal;
@@ -1807,11 +1806,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .footer .topanddot .top .text {
+  .footer-top-and-dot .top .text {
     font-size: 30px;
   }
 }
-.footer .topanddot .top .button {
+.footer-top-and-dot .top .button {
   display: flex;
   padding: 16px 32px;
   justify-content: center;
@@ -1820,7 +1819,7 @@ ol {
   border-radius: 8px;
   background: #F00;
 }
-.footer .topanddot .top .button .btntxt {
+.footer-top-and-dot .top .button .btn-txt {
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -1829,13 +1828,13 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
-.footer .topanddot .top .button .icon {
+.footer-top-and-dot .top .button .icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer .topanddot .dot {
+.footer-top-and-dot .dot {
   display: flex;
   height: 1px;
   align-items: flex-start;
@@ -1867,7 +1866,7 @@ ol {
   align-items: flex-start;
   gap: 10px;
 }
-.footer .cards .cardd .logo .logotxt {
+.footer .cards .cardd .logo .logo-txt {
   margin: 0;
   color: #FFF;
   font-size: 21px;
@@ -1914,7 +1913,7 @@ ol {
   border-radius: 0px 8px 8px 0px;
   background: #F00;
 }
-.footer .cards .cardd .inputt .buttonnn .buttonntext {
+.footer .cards .cardd .inputt .buttonnn .buttonn-text {
   padding: 16px 32px;
   color: #FFF;
   font-size: 17px;

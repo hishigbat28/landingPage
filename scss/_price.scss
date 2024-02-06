@@ -11,7 +11,7 @@
     @include breakpoint-down(535px){
         padding: 70px 50px;
     }
-    .topContent{
+    &-top-content{
         display: flex;
         width: 80%;
         flex-direction: column;
@@ -24,7 +24,7 @@
         @include breakpoint-down(535px){
             align-items: start;
         }
-        .topText{
+        .top-text{
             color: #9F9F9F;
             text-align: center;
             font-size: 17px;
@@ -33,7 +33,7 @@
             line-height: normal;
             margin: 0;
         }
-        .bottomText{
+        .bottom-text{
             color: #343F52;
             text-align: center;
             font-size: 44px;
@@ -78,7 +78,7 @@
             @include breakpoint-down(385px){
                 padding: 32px 40px;
             }
-            .topContent{
+            .top-content{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -142,7 +142,7 @@
                 gap: 8px;
                 border-radius: 8px;
                 background: #F00;
-                .btnText{
+                .btn-text{
                     color: #FFF;
                     font-size: 17px;
                     font-style: normal;
