@@ -407,6 +407,7 @@ ol {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -628,7 +629,7 @@ ol {
 # Hero section.
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
+  width: fit-content;
   display: flex;
   background-color: #fff6f6;
   overflow: hidden;
@@ -641,8 +642,7 @@ ol {
 .hero-left {
   width: 50%;
   display: flex;
-  padding: 150px 100px;
-  padding-left: 0;
+  padding: 100px 100px;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
@@ -708,12 +708,8 @@ ol {
 .hero-right {
   width: 50%;
   height: 720px;
-  background-image: url("../images/photo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1459px) {
   .hero-right {
@@ -731,11 +727,44 @@ ol {
     height: 500px;
   }
 }
-.hero-right i {
-  color: red;
+.hero-right .inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+  position: relative;
+}
+@media only screen and (max-width: 1293px) {
+  .hero-right .inner {
+    padding-right: 0;
+  }
+}
+.hero-right .inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-right .inner .inner-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+@media only screen and (max-width: 1293px) {
+  .hero-right .inner .inner-inner {
+    padding-right: 0;
+  }
+}
+.hero-right .inner .inner-inner i {
+  color: rgb(255, 0, 0);
   font-size: 100px;
+  border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  border-radius: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -822,7 +851,6 @@ ol {
   padding: 32px;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
   border-radius: 8px;
 }
 @media only screen and (max-width: 534px) {
@@ -871,7 +899,7 @@ ol {
 .guarantee {
   width: 100%;
   display: flex;
-  padding: 0 100px;
+  padding: 120px 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1189,16 +1217,20 @@ ol {
   background: #FFF6F6;
   width: 100%;
   overflow: hidden;
+  padding: 0px 100px;
 }
 @media only screen and (max-width: 1373px) {
   .evidence {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 534px) {
+  .evidence {
+    padding: 0px 50px;
+  }
+}
 .evidence-left {
-  display: flex;
-  align-items: flex-start;
-  flex: 1 0 0;
+  width: 50%;
   align-self: stretch;
   background-image: url("../images/pexels-andrea-piacquadio-3756345.jpg");
   background-repeat: no-repeat;
@@ -1206,17 +1238,28 @@ ol {
   background-position: center;
 }
 .evidence-right {
+  width: 50%;
   display: flex;
-  padding: 150px 90px;
+  padding: 120px 100px;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  flex: 1 0 0;
 }
 @media only screen and (max-width: 534px) {
   .evidence-right {
     width: 100%;
     padding: 70px 50px;
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .evidence-right {
+    width: 100%;
+    padding: 120px 0px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .evidence-right {
+    padding: 70px 0;
   }
 }
 .evidence-right .content {

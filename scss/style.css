@@ -408,6 +408,7 @@ ol {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -609,14 +610,31 @@ ol {
 }
 
 /*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+.site-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.site-section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.site-section.has-background-light {
+  background-color: #fff6f6;
+}
+
+/*--------------------------------------------------------------
 # Hero section.
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
-  background-color: #FFF6F6;
+  background-color: #fff6f6;
   overflow: hidden;
 }
 @media only screen and (max-width: 1293px) {
@@ -627,7 +645,7 @@ ol {
 .hero-left {
   width: 50%;
   display: flex;
-  padding: 150px 100px;
+  padding: 100px 100px;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
@@ -652,7 +670,7 @@ ol {
   font-size: 54px;
   font-weight: 700;
   line-height: 120%;
-  color: #343F52;
+  color: #343f52;
   font-style: normal;
 }
 @media only screen and (max-width: 534px) {
@@ -662,7 +680,7 @@ ol {
 }
 .hero-left .text {
   font-size: 25px;
-  color: #60697B;
+  color: #60697b;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -679,8 +697,8 @@ ol {
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  background: #F00;
-  color: #FFF;
+  background: #f00;
+  color: #fff;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -693,12 +711,8 @@ ol {
 .hero-right {
   width: 50%;
   height: 720px;
-  background-image: url("../images/photo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1459px) {
   .hero-right {
@@ -716,11 +730,45 @@ ol {
     height: 500px;
   }
 }
-.hero-right i {
-  color: red;
+.hero-right .inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+  position: relative;
+}
+@media only screen and (max-width: 1293px) {
+  .hero-right .inner {
+    padding-right: 0;
+  }
+}
+.hero-right .inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-right .inner .inner-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+@media only screen and (max-width: 1293px) {
+  .hero-right .inner .inner-inner {
+    padding-right: 0;
+  }
+}
+.hero-right .inner .inner-inner i {
+  color: rgb(255, 0, 0);
   font-size: 100px;
+  border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  border-radius: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -756,7 +804,7 @@ ol {
   }
 }
 .choice-topcontent .top-text {
-  color: #9F9F9F;
+  color: #9f9f9f;
   text-align: center;
   font-size: 17px;
   font-style: normal;
@@ -764,7 +812,7 @@ ol {
   line-height: normal;
 }
 .choice-topcontent .bottom-text {
-  color: #343F52;
+  color: #343f52;
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -807,18 +855,17 @@ ol {
   padding: 32px;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
   border-radius: 8px;
 }
 @media only screen and (max-width: 534px) {
   .choice .all-choices-choices .choice {
     flex-direction: column;
     padding: 0;
-    gap: 0px;
+    gap: 0;
   }
 }
 .choice .all-choices-choices .choice .number {
-  color: #DF0000;
+  color: #df0000;
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -834,7 +881,7 @@ ol {
   flex: 1 0 0;
 }
 .choice .all-choices-choices .choice .content .top-text {
-  color: #343F52;
+  color: #343f52;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -842,7 +889,7 @@ ol {
   margin: 0;
 }
 .choice .all-choices-choices .choice .content .bottom-text {
-  color: #60697B;
+  color: #60697b;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -862,7 +909,6 @@ ol {
   align-items: center;
   gap: 50px;
   align-self: stretch;
-  background: #FFF6F6;
   overflow: hidden;
 }
 @media only screen and (max-width: 534px) {
@@ -884,7 +930,7 @@ ol {
   }
 }
 .guarantee-top-content .top-text {
-  color: #9F9F9F;
+  color: #9f9f9f;
   text-align: center;
   font-size: 17px;
   font-style: normal;
@@ -897,7 +943,7 @@ ol {
   }
 }
 .guarantee-top-content .bottom-text {
-  color: #343F52;
+  color: #343f52;
   text-align: center;
   font-size: 44px;
   font-style: normal;
@@ -955,7 +1001,7 @@ ol {
 }
 .guarantee .allCards .cards .card .star-and-comment p {
   align-self: stretch;
-  color: #60697B;
+  color: #60697b;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -996,7 +1042,7 @@ ol {
   flex-wrap: wrap;
 }
 .guarantee .allCards .cards .card .image-and-name .name .peoplename {
-  color: #343F52;
+  color: #343f52;
   text-align: center;
   font-size: 21px;
   font-style: normal;
@@ -1009,7 +1055,7 @@ ol {
   }
 }
 .guarantee .allCards .cards .card .image-and-name .name .professional {
-  color: #9F9F9F;
+  color: #9f9f9f;
   text-align: center;
   font-size: 17px;
   font-style: normal;
@@ -1176,16 +1222,20 @@ ol {
   background: #FFF6F6;
   width: 100%;
   overflow: hidden;
+  padding: 0px 100px;
 }
 @media only screen and (max-width: 1373px) {
   .evidence {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 534px) {
+  .evidence {
+    padding: 0px 50px;
+  }
+}
 .evidence-left {
-  display: flex;
-  align-items: flex-start;
-  flex: 1 0 0;
+  width: 50%;
   align-self: stretch;
   background-image: url("../images/pexels-andrea-piacquadio-3756345.jpg");
   background-repeat: no-repeat;
@@ -1193,17 +1243,28 @@ ol {
   background-position: center;
 }
 .evidence-right {
+  width: 50%;
   display: flex;
-  padding: 150px 90px;
+  padding: 120px 100px;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  flex: 1 0 0;
 }
 @media only screen and (max-width: 534px) {
   .evidence-right {
     width: 100%;
     padding: 70px 50px;
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .evidence-right {
+    width: 100%;
+    padding: 120px 0px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .evidence-right {
+    padding: 70px 0;
   }
 }
 .evidence-right .content {
