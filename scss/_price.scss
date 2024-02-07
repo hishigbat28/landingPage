@@ -57,6 +57,9 @@
             flex-direction: column;
             align-items: center;
         }
+        @include breakpoint-down(535px){
+            align-items: start;
+        }
         .card{
             display: flex;
             padding: 50px 100px;
@@ -144,7 +147,7 @@
                 background: #F00;
                 .btn-text{
                     color: #FFF;
-                    font-size: 17px;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;

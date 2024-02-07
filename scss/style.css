@@ -1695,6 +1695,11 @@ ol {
     align-items: center;
   }
 }
+@media only screen and (max-width: 534px) {
+  .price .cards {
+    align-items: start;
+  }
+}
 .price .cards .card {
   display: flex;
   padding: 50px 100px;
@@ -1794,7 +1799,7 @@ ol {
 }
 .price .cards .card .button .btn-text {
   color: #FFF;
-  font-size: 17px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1821,7 +1826,10 @@ ol {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+.footer-section {
+  background: #10003E;
+}
+.footer-section .footer {
   display: flex;
   padding: 120px 100px 100px 100px;
   flex-direction: column;
@@ -1833,18 +1841,18 @@ ol {
   overflow: hidden;
 }
 @media only screen and (max-width: 534px) {
-  .footer {
+  .footer-section .footer {
     padding: 70px 50px;
   }
 }
-.footer-top-and-dot {
+.footer-section .footer-top-and-dot {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
 }
-.footer-top-and-dot .top {
+.footer-section .footer-top-and-dot .top {
   display: flex;
   padding-bottom: 64px;
   justify-content: space-between;
@@ -1852,13 +1860,13 @@ ol {
   align-self: stretch;
 }
 @media only screen and (max-width: 1216px) {
-  .footer-top-and-dot .top {
+  .footer-section .footer-top-and-dot .top {
     flex-direction: column;
     align-items: start;
     gap: 40px;
   }
 }
-.footer-top-and-dot .top .text {
+.footer-section .footer-top-and-dot .top .text {
   color: #FFF;
   font-size: 36px;
   font-style: normal;
@@ -1867,11 +1875,11 @@ ol {
   margin: 0;
 }
 @media only screen and (max-width: 534px) {
-  .footer-top-and-dot .top .text {
+  .footer-section .footer-top-and-dot .top .text {
     font-size: 30px;
   }
 }
-.footer-top-and-dot .top .button {
+.footer-section .footer-top-and-dot .top .button {
   display: flex;
   padding: 16px 32px;
   justify-content: center;
@@ -1880,7 +1888,7 @@ ol {
   border-radius: 8px;
   background: #F00;
 }
-.footer-top-and-dot .top .button .btn-txt {
+.footer-section .footer-top-and-dot .top .button .btn-txt {
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -1889,13 +1897,13 @@ ol {
   text-transform: uppercase;
   margin: 0;
 }
-.footer-top-and-dot .top .button .icon {
+.footer-section .footer-top-and-dot .top .button .icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer-top-and-dot .dot {
+.footer-section .footer-top-and-dot .dot {
   display: flex;
   height: 1px;
   align-items: flex-start;
@@ -1903,7 +1911,7 @@ ol {
   align-self: stretch;
   background: #9F9F9F;
 }
-.footer .cards {
+.footer-section .footer .cards {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -1911,23 +1919,23 @@ ol {
   align-self: stretch;
 }
 @media only screen and (max-width: 1197px) {
-  .footer .cards {
+  .footer-section .footer .cards {
     flex-direction: column;
   }
 }
-.footer .cards .cardd {
+.footer-section .footer .cards .cardd {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   flex: 1 0 0;
 }
-.footer .cards .cardd .logo {
+.footer-section .footer .cards .cardd .logo {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.footer .cards .cardd .logo .logo-txt {
+.footer-section .footer .cards .cardd .logo .logo-txt {
   margin: 0;
   color: #FFF;
   font-size: 21px;
@@ -1936,7 +1944,7 @@ ol {
   line-height: normal;
   margin: 0;
 }
-.footer .cards .cardd .text {
+.footer-section .footer .cards .cardd .text {
   color: #FFF;
   font-size: 17px;
   font-style: normal;
@@ -1944,17 +1952,17 @@ ol {
   line-height: 160%;
   margin: 0;
 }
-.footer .cards .cardd .inputt {
+.footer-section .footer .cards .cardd .inputt {
   height: 52px;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 479px) {
-  .footer .cards .cardd .inputt {
+  .footer-section .footer .cards .cardd .inputt {
     width: 100%;
   }
 }
-.footer .cards .cardd .inputt input {
+.footer-section .footer .cards .cardd .inputt input {
   height: 100%;
   padding-left: 16px;
   border-top-left-radius: 8px;
@@ -1963,18 +1971,18 @@ ol {
   outline: none;
 }
 @media only screen and (max-width: 479px) {
-  .footer .cards .cardd .inputt input {
+  .footer-section .footer .cards .cardd .inputt input {
     font-size: 12px;
     padding-right: -20px;
   }
 }
-.footer .cards .cardd .inputt .buttonnn {
+.footer-section .footer .cards .cardd .inputt .buttonnn {
   height: 100%;
   display: flex;
   border-radius: 0px 8px 8px 0px;
   background: #F00;
 }
-.footer .cards .cardd .inputt .buttonnn .buttonn-text {
+.footer-section .footer .cards .cardd .inputt .buttonnn .buttonn-text {
   padding: 16px 32px;
   color: #FFF;
   font-size: 17px;
