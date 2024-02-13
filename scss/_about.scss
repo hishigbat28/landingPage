@@ -4,13 +4,13 @@
     &-container{
         // width: 100%;
         display: flex;
-        padding: 120px 100px;
+        padding: 100px 0px;
         align-items: center;
         gap: 66px;
         align-self: stretch;
         overflow: hidden;
         @include breakpoint-down(535px){
-		padding: 70px 50px; 
+		padding: 70px 0px; 
 	}
     @include breakpoint-down(1220px){
         flex-direction: column;

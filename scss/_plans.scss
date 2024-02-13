@@ -1,7 +1,7 @@
 .plans{
     width: 100%;
     display: flex;
-    padding: 120px 100px;
+    padding: 100px 0px;
     align-items: center;
     gap: 100px;
     align-self: stretch;
@@ -10,7 +10,7 @@
         flex-direction: column;
     }
     @include breakpoint-down(535px){
-        padding: 70px 50px;
+        padding: 70px 0px;
     }
     &-top-content{
         display: flex;
