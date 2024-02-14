@@ -642,6 +642,9 @@ ol {
   text-decoration: none;
   color: #343f52;
 }
+.side-nav-list li a :hover {
+  color: #df0000;
+}
 
 /*--------------------------------------------------------------
 # Section

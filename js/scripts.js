@@ -24,5 +24,5 @@ if (menuToggle) {
     } else {
       document.body.classList.remove('show-mobile-menu')
     }
-  })
+  })  
 }
