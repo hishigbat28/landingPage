@@ -69,6 +69,32 @@
             gap: 40px;
             flex: 1 0 0;
             border: none;
+            &.aos-init{
+                .top-content,p,svg,.button{
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition: all;
+                    transition-duration: 0.5s;
+                    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transition-delay: 2s;
+                }
+                .top-content{
+                    transition-delay:0.5s ;
+                }
+                p,svg{
+                    transition-delay:0.6s ;
+                }
+                .button{
+                    transition-delay: 0.8s;
+                }
+            }
+            &.aos-animate{
+                .top-content,p,svg,.button{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
             @include breakpoint-down(1310px){
                 padding: 50px 150px;
             }

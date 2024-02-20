@@ -388,7 +388,12 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 300ms;
   cursor: pointer;
+}
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 8px -2px rgba(99, 99, 99, 0.75);
 }
 .button i {
   width: 12.3px;
@@ -444,6 +449,7 @@ ol {
   font-weight: 700;
   color: #343f52;
   font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
 }
 .site-header .site-logo img {
   width: 47.5px;
@@ -709,6 +715,9 @@ ol {
   line-height: 120%;
   color: #343f52;
   font-style: normal;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 @media only screen and (max-width: 534px) {
   .hero-left .title {
@@ -793,6 +802,11 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.hero-right .inner .inner-inner :hover {
+  transform: scale(1.1);
+  transition: 200ms;
 }
 @media only screen and (max-width: 1293px) {
   .hero-right .inner .inner-inner {
@@ -804,8 +818,17 @@ ol {
   font-size: 100px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
+  transition: 200ms;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*--------------------------------------------------------------
 # Why choose section.
 --------------------------------------------------------------*/
@@ -1741,6 +1764,27 @@ ol {
   gap: 40px;
   flex: 1 0 0;
   border: none;
+}
+.price .cards .card.aos-init .top-content, .price .cards .card.aos-init p, .price .cards .card.aos-init svg, .price .cards .card.aos-init .button {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 2s;
+}
+.price .cards .card.aos-init .top-content {
+  transition-delay: 0.5s;
+}
+.price .cards .card.aos-init p, .price .cards .card.aos-init svg {
+  transition-delay: 0.6s;
+}
+.price .cards .card.aos-init .button {
+  transition-delay: 0.8s;
+}
+.price .cards .card.aos-animate .top-content, .price .cards .card.aos-animate p, .price .cards .card.aos-animate svg, .price .cards .card.aos-animate .button {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media only screen and (max-width: 1309px) {
   .price .cards .card {

@@ -41,7 +41,6 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: 130%;
-
 			@include breakpoint-down(535px) {
 				font-size: 30px;
 				text-align: left;

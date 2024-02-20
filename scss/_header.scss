@@ -21,7 +21,7 @@
 		font-weight: 700;
 		color: #343f52;
 		font-family: "Space Grotesk", sans-serif;
-
+		cursor: pointer;
 		img {
 			width: 47.5px;
 			height: 54px;
@@ -57,7 +57,6 @@
 	}
 
 	@include breakpoint-down(1060px) {
-
 		.menu {
 			display: none;
 		}

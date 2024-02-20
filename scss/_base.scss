@@ -76,8 +76,12 @@ ol {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	transition: 300ms;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: 0px 3px 8px -2px rgba(99, 99, 99, 0.75);
+	}
 	cursor: pointer;
-
 	i {
 		width: 12.3px;
 		height: 15px;
