@@ -15,14 +15,20 @@
   }
 })()
 
-// Menu
-var menuToggle = document.querySelector('.menu-button')
+// Menu;
+var menuToggle = document.querySelector('.menu-button');
+var sideNav = document.querySelector('.side-nav-list');
 if (menuToggle) {
   menuToggle.addEventListener('click', function () {
     if (!document.body.classList.contains('show-mobile-menu')) {
       document.body.classList.add('show-mobile-menu')
+      sideNav.addEventListener('click', function () {
+        if (document.body.classList.contains('show-mobile-menu')) {
+          document.body.classList.remove('show-mobile-menu')
+        }
+      })
     } else {
       document.body.classList.remove('show-mobile-menu')
     }
-  })  
+  })
 }
